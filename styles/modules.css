@@ -1,0 +1,19 @@
+nav {
+  float: right;
+  font-size: 2rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+}
+.header-h1 {
+  display: inline-block;
+}
+.icon-list {
+  display: none;
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+nav:hover ul {
+  display: block;
+  float: right;
+}
