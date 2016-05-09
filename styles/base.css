@@ -3,7 +3,14 @@ html, body {
   padding: 0 0.125rem;
   background: #ffffff;
   color: #222222;
+  line-height: 1.5;
 }
 img {
   max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
