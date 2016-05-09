@@ -1,0 +1,9 @@
+html, body {
+  font-size: 100%;
+  padding: 0 0.125rem;
+  background: #ffffff;
+  color: #222222;
+}
+img {
+  max-width: 100%;
+}
