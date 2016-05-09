@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="vendor/styles/normalize.css" type="text/css" rel="stylesheet">
+    <link href="vendor/normalize.css" type="text/css" rel="stylesheet">
     <link href="styles/base.css" type="text/css" rel="stylesheet">
     <link href="styles/layout.css" type="text/css" rel="stylesheet">
     <link href="styles/modules.css" type="text/css" rel="stylesheet">
@@ -13,11 +13,13 @@
   <body>
     <header>
       <h1 class="header-h1">Projects</h1>
-      <div class="icon-menu"></div> <!--todo: add icomoon or similar here-->
       <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="projects.html">Projects</a></li>
+        <div class="icon-menu"></div>
+        <ul class="nav-menu icon-list">
+          <!--TODO: make this less crap -->
+
+          <li class="icon-home"><a href="index.html">Home</a></li>
+          <li class="icon-folder-open"><a href="projects.html">Projects</a></li>
         </ul>
       </nav>
     </header>
