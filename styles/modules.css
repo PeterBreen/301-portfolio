@@ -9,16 +9,31 @@ nav {
 .header-h1 {
   display: inline-block;
 }
-.icon-list {
+nav .icon-list {
   display: none;
+}
+.icon-list {
   list-style-type: none;
   font-size: 1.5rem;
   line-height: 1.5rem;
 }
+.icon-list li {
+  padding-bottom: 0.5rem;
+}
 nav:hover ul {
   display: block;
-  line-height: 1.5;
 }
 nav li {
   padding: 0.25rem 0;
+}
+@media screen and (min-width: 768px) {
+  .icon-menu {
+    display: none;
+  }
+  nav .icon-list {
+    display: block;
+  }
+  nav .icon-list li {
+    display: inline;
+  }
 }
