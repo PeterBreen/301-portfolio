@@ -24,24 +24,24 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-home:before {
+.icon-home::before {
     content: "\e900";
 }
-.icon-folder-open:before {
+.icon-folder-open::before {
     content: "\e901";
 }
-.icon-menu:before {
+.icon-menu::before {
     content: "\e902";
 }
-.icon-flickr3:before {
+.icon-flickr3::before {
     content: "\e903";
 }
-.icon-github:before {
+.icon-github::before {
     content: "\e904";
 }
-.icon-wordpress:before {
+.icon-wordpress::before {
     content: "\e905";
 }
-.icon-linkedin:before {
+.icon-linkedin::before {
     content: "\e906";
 }
