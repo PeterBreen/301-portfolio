@@ -1,8 +1,10 @@
 nav {
   float: right;
   font-size: 2rem;
-  padding-right: 0.5rem;
-  padding-top: 0.5rem;
+}
+.icon-menu {
+  float: right;
+  padding: 0.5rem 0.5rem 0 0;
 }
 .header-h1 {
   display: inline-block;
@@ -15,5 +17,8 @@ nav {
 }
 nav:hover ul {
   display: block;
-  float: right;
+  line-height: 1.5;
+}
+nav li {
+  padding: 0.25rem 0;
 }
