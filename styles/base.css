@@ -13,6 +13,7 @@ ul {
 }
 
 /*actual base styles */
+/* TODO: add background that's more interesting than solid fff. gradient perhaps */
 html {
   font-size: 100%;
   background: #ffffff;
