@@ -18,7 +18,7 @@ nav {
   display: none;
 }
 .social-list li {
-  display: inline;
+  display: inline-block;
   padding-right: 0.5rem;
 }
 .social-list li:last-child {
@@ -41,6 +41,6 @@ nav li {
     display: block;
   }
   .icon-list li {
-    display: inline;
+    display: inline-block;
   }
 }
