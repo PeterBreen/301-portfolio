@@ -17,9 +17,6 @@ nav {
 .icon-list {
   display: none;
 }
-.social-list {
-  margin: 0 auto;
-}
 .social-list li {
   display: inline;
   padding-right: 0.5rem;
