@@ -36,6 +36,9 @@ nav li {
 .template {
   display: none;
 }
+.byline {
+ font-style: italic;
+}
 @media screen and (min-width: 768px) {
   body {
     max-width: 720px;

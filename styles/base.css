@@ -11,6 +11,10 @@ TODO: sass!
 ul {
   -webkit-padding-start: 0;
 }
+h2, h3 {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
 
 /*actual base styles */
 /* TODO: add background that's more interesting than solid fff. gradient perhaps */
@@ -27,6 +31,7 @@ body {
   padding: 0 0.25rem;
   background-color: #e1e6fa;
   min-height: 100%;
+  position: relative;
 }
 img {
   max-width: 100%;
@@ -41,4 +46,16 @@ a:hover {
 }
 a:visited {
   color: #375d81;
+}
+main {
+  padding-bottom: 2rem;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #183152;
+  color: #fff;
+  width: calc(100% - 2rem);
+  padding: 1rem;
 }
