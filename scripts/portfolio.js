@@ -16,9 +16,11 @@ Article.prototype.toHtml = function() {
 
   $newArticle.attr('data-category', this.category);
   $newArticle.attr('href', this.projectUrl);
-  $newArticle.find('a').text(this.author);
   $newArticle.find('.article-body').html(this.body);
   $newArticle.find('header h2').text(this.title);
+  // Feature Image not implemented until images actually exist!
+  // $newArticle.find('.featureImg').html(this.featureImage);
+
   // This is a separate inclusion of the publication date as a 'title' attribute
   // to show on hover:
   $newArticle.find('time[pubdate]').attr('title', this.publishedOn);
@@ -34,7 +36,7 @@ Article.prototype.toHtml = function() {
 };
 
 // Sort our data by date published, descending order
-ourLocalData.sort(function(a,b) {
+portfolioArticles.sort(function(a,b) {
   return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
 });
 
