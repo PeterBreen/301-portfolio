@@ -13,9 +13,8 @@ function Article (opts) {
 
 Article.prototype.toHtml = function() {
   var $newArticle = $('article.template').clone();
-
   $newArticle.attr('data-category', this.category);
-  $newArticle.attr('href', this.projectUrl);
+  // TODO: make this function $newArticle.attr('href', this.projectUrl);
   $newArticle.find('.article-body').html(this.body);
   $newArticle.find('header h3').text(this.title);
   // Feature Image not implemented until images actually exist!
