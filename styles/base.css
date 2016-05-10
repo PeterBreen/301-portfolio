@@ -5,6 +5,13 @@
 #375d81
 #183152
 */
+
+/*reset values */
+ul {
+  -webkit-padding-start: 0;
+}
+
+/*actual base styles */
 html {
   font-size: 100%;
   background: #ffffff;
