@@ -17,7 +17,7 @@ Article.prototype.toHtml = function() {
   $newArticle.attr('data-category', this.category);
   $newArticle.attr('href', this.projectUrl);
   $newArticle.find('.article-body').html(this.body);
-  $newArticle.find('header h2').text(this.title);
+  $newArticle.find('header h3').text(this.title);
   // Feature Image not implemented until images actually exist!
   // $newArticle.find('.featureImg').html(this.featureImage);
 
@@ -42,7 +42,7 @@ portfolioArticles.sort(function(a,b) {
 
 // Now iterate through our transformed collection and instantiate a new Article
 //  instance.
-portfolioArticles.forEach(function(ele) {
+myProjects.forEach(function(ele) {
   portfolioArticles.push(new Article(ele));
 });
 
