@@ -20,13 +20,13 @@ img {
   max-width: 100%;
 }
 a {
-  color: #375d81;
+  color: #183152;
   text-decoration: none;
 }
 a:hover {
-  color: #375d81;
+  color: #183152;
   text-decoration: underline;
 }
 a:visited {
-  color: #183152;
+  color: #375d81;
 }
