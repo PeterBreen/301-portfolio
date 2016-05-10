@@ -45,3 +45,6 @@
 .icon-linkedin::before {
     content: "\e906";
 }
+.icon-mail:before {
+    content: "\e907";
+}
