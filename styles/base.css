@@ -1,0 +1,42 @@
+/* color scheme, lightest to darkest:
+#e1e6fa
+#c4d7ed
+#abc8e2
+#375d81
+#183152
+*/
+
+/*reset values */
+ul {
+  -webkit-padding-start: 0;
+}
+
+/*actual base styles */
+html {
+  font-size: 100%;
+  background: #ffffff;
+  color: #222222;
+  line-height: 1.5;
+  height: 100%;
+  min-height: 100%;
+}
+body {
+  margin: 0 0.125rem;
+  padding: 0 0.25rem;
+  background-color: #e1e6fa;
+  min-height: 100%;
+}
+img {
+  max-width: 100%;
+}
+a {
+  color: #183152;
+  text-decoration: none;
+}
+a:hover {
+  color: #183152;
+  text-decoration: underline;
+}
+a:visited {
+  color: #375d81;
+}
