@@ -33,6 +33,9 @@ nav:hover ul {
 nav li {
   padding: 0.25rem 0;
 }
+.template {
+  display: none;
+}
 @media screen and (min-width: 768px) {
   .icon-menu {
     display: none;
