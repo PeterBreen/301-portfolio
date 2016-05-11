@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -11,37 +11,57 @@
     <title>Peter's Portfolio</title>
   </head>
   <body>
-<header>
-  <h1 class="header-h1">Peter Breen</h1>
-  <nav>
-    <div class="icon-menu"></div>
-    <ul class="nav-menu icon-list">
-      <!--TODO: make this work better in hover state -->
-
-      <li class="icon-home"><a href="index.html">Home</a></li>
-      <li class="icon-folder-open"><a href="projects.html">Projects</a></li>
-    </ul>
-  </nav>
-</header>
-    <section>
-      <h2>About Me</h2>
-      <p>Hi, I’m Peter.</p>
-      <p>I do front-end development in Seattle, take photos (of airplanes, mostly), and hike mountains from time to time. I used to think I wanted to be an archivist. Now I think about making usable websites.</p>
-      <p>Chances are, if an airplane flies overhead, I can either identify it or look it up. It’s not like I have a frequently-used app just to find out just what model, carrier, and flight it is or anything.</p>
-      <p>I always feel that “about me” pages are like icebreakers at social events, so for the record: Puffins are my favorite breakfast cereal. Feel free to contact me below about airplanes, cereal, or work. Whatever suits you.</p>
-    </section>
-
-    <section>
-      <h2>Contact</h2>
-      <!--TODO: add clickable icons for social links instead of bullets (e.g. flickr, github, linkedin) -->
-      <p><a href="mailto:pbreen@gmail.com">pbreen@gmail.com<br />
-      <a href="mailto:peter@peterbreen.info">peter@peterbreen.info</p>
-      <ul class="social-list">
-        <li><a class="icon-github" href="https://github.com/PeterBreen"></a></li>
-        <li><a class="icon-linkedin" href="https://www.linkedin.com/in/peter-breen-96404142"></a></li>
-        <li><a class="icon-flickr3" href="https://www.flickr.com/photos/notpsion"></a></li>
-        <li><a class="icon-wordpress" href="http://peterbreen.info/wp"></a></li>
-      </ul>
-	   </section>
+    <header>
+      <h1>Peter Breen</h1>
+      <nav>
+        <div class="icon-menu"></div>
+        <ul class="nav-menu icon-list">
+          <li><a class="icon-home" href="#">Home</a></li>
+          <li><a class="icon-folder-open" href="#">Projects</a></li>
+          <li><a class="icon-mail" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>About Me</h2>
+        <p>Hi, I’m Peter.</p>
+        <p>I do front-end development in Seattle, take photos (of airplanes, mostly), and hike mountains from time to time. I used to think I wanted to be an archivist. Now I think about making usable websites.</p>
+        <p>Chances are, if an airplane flies overhead, I can either identify it or look it up. It’s not like I have a frequently-used app just to find out just what model, carrier, and flight it is or anything.</p>
+        <p>I always feel that “about me” pages are like icebreakers at social events, so for the record: Puffins are my favorite breakfast cereal. Feel free to <a href="#contact">contact me below</a> about airplanes, cereal, or work. Whatever suits you.</p>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+       <article class="template" data-category="cat">
+         <header>
+           <h3>Project Title</h3>
+             <div class="byline">
+              <a href="">published <time pubdate datetime="2000-01-01">Publish Time</time></a>
+           </div>
+         </header>
+         <section class="article-body">
+         </section>
+        </article>
+       </section>
+       <section id="contact">
+         <h2>Contact</h2>
+         <!--TODO: add clickable icons for social links instead of bullets (e.g. flickr, github, linkedin) -->
+         <p><a href="mailto:pbreen@gmail.com">pbreen@gmail.com<br />
+         <a href="mailto:peter@peterbreen.info">peter@peterbreen.info</p>
+         <ul class="social-list">
+           <li><a class="icon-github" href="https://github.com/PeterBreen"></a></li>
+           <li><a class="icon-linkedin" href="https://www.linkedin.com/in/peter-breen-96404142"></a></li>
+           <li><a class="icon-flickr3" href="https://www.flickr.com/photos/notpsion"></a></li>
+           <li><a class="icon-wordpress" href="http://peterbreen.info/wp"></a></li>
+         </ul>
+       </section>
+      </main>
+      <footer>
+        <!-- TODO: footer content -->
+        <span>&copy; 2016 Peter Breen</span>
+      </footer>
+    <script src="vendor/jquery.min.js"></script> <!-- TODO: make a CDN link when deployed - v2.2.2 -->
+    <script src="scripts/portfolioData.js"></script>
+    <script src="scripts/portfolio.js"></script>
   </body>
 </html>
