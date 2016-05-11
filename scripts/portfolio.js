@@ -1,8 +1,6 @@
-var portfolioArticles = [];
+var portfolioProjects = [];
 
-function Article (opts) {
-  // TODO: Use the js object passed in to complete this contructor function:
-  // Save ALL the properties of `opts` into `this`.
+function Project (opts) {
   this.title = opts.title;
   this.category = opts.category;
   this.projectUrl = opts.projectUrl;
@@ -11,42 +9,30 @@ function Article (opts) {
   this.body = opts.body;
 }
 
-Article.prototype.toHtml = function() {
-  var $newArticle = $('article.template').clone();
-  $newArticle.attr('data-category', this.category);
-  $newArticle.find('a').attr('href', this.projectUrl);
-  $newArticle.find('.article-body').html(this.body);
-  $newArticle.find('header h3').text(this.title);
+Project.prototype.toHtml = function() {
+  var $newProject = $('article.template').clone();
+  $newProject.attr('data-category', this.category);
+  $newProject.find('a').attr('href', this.projectUrl);
+  $newProject.find('.article-body').html(this.body);
+  $newProject.find('header h3').text(this.title);
   // Feature Image not implemented until images actually exist!
-  // $newArticle.find('.featureImg').html(this.featureImage);
-
-  // This is a separate inclusion of the publication date as a 'title' attribute
-  // to show on hover:
-  $newArticle.find('time[pubdate]').attr('title', this.publishedOn);
+  // $newProject.find('.featureImg').html(this.featureImage);
+  $newProject.find('time[pubdate]').attr('title', this.publishedOn);
   // Display the date as a relative number of "days ago":
-  $newArticle.find('time').html('about ' + parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000) + ' days ago');
-
-  // replace <hr>
-  $newArticle.append('<div class="linebreak"></div>');
-
-  // TODO: This cloned article is no longer a template, so we should remove that class...
-  $newArticle.removeClass('template');
-  return $newArticle;
+  $newProject.find('time').html('about ' + parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000) + ' days ago');
+  $newProject.append('<div class="linebreak"></div>');
+  $newProject.removeClass('template');
+  return $newProject;
 };
 
 // Sort our data by date published, descending order
-portfolioArticles.sort(function(a,b) {
+portfolioProjects.sort(function(a,b) {
   return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
 });
 
-// Now iterate through our transformed collection and instantiate a new Article
-//  instance.
 myProjects.forEach(function(ele) {
-  portfolioArticles.push(new Article(ele));
+  portfolioProjects.push(new Project(ele));
 });
-
-// Append each Article to the DOM. Look carefully:
-//   This '.toHtml' method is one we created.
-portfolioArticles.forEach(function(a){
+portfolioProjects.forEach(function(a){
   $('#projects').append(a.toHtml());
 });
