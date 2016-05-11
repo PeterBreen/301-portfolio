@@ -33,6 +33,9 @@ body {
   min-height: 100%;
   position: relative;
 }
+h1 {
+  display: inline-block;
+}
 img {
   max-width: 100%;
 }
