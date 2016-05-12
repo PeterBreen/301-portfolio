@@ -34,6 +34,7 @@ body {
 h1 {
   display: inline-block;
   padding-top: 0.4rem;
+  margin-left: 1rem;
 }
 img {
   max-width: 100%;
@@ -54,10 +55,10 @@ header {
   width: 100%;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
-  border-bottom: 2px solid #183152;
 }
 main {
   padding-bottom: 2rem;
+  padding: 0 0.5rem;
 }
 footer {
   position: absolute;
