@@ -11,7 +11,7 @@
     <title>Peter's Portfolio</title>
   </head>
   <body>
-    <header>
+    <header class="clearfix">
       <h1>Peter Breen</h1>
       <nav>
         <div class="icon-menu"></div>
@@ -25,10 +25,19 @@
     </header>
     <main>
       <section id="home">
-
+        <p>Gonna be honest with you, I'm not sure what to put in the home section right now. However, if you're seeing this, I can confirm you are in fact looking at the home section instead of Projects or Contact!</p>
+        <p>Here's a list of three random things:</p>
+        <ul>
+          <li>rems are the best unit</li>
+          <li>MDN > w3schools</li>
+          <li>I know someone who has to maintain an IE6 intranet. Scary stuff.</li>
+        </ul>
       </section>
       <section id="projects">
         <h2>Projects</h2>
+          <select id="category-filter">
+            <option value="">- Choose a Category -</option>
+          </select>
        <article class="template" data-category="cat">
          <header>
            <h3>Project Title</h3>
