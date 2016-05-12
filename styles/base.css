@@ -32,13 +32,23 @@ body {
   min-height: 100%;
   position: relative;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4 {
   font-family: "Roboto Slab", serif;
 }
 h1 {
   display: inline-block;
-  padding-top: 0.4rem;
   margin-left: 1rem;
+  font-size: 3.157rem;
+  line-height: 4.75rem;
+}
+h2 {
+  font-size: 2.369rem;
+}
+h3 {
+  font-size: 1.777rem;
+}
+h4 {
+  font-size: 1.333rem;
 }
 img {
   max-width: 100%;
