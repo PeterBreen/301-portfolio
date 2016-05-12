@@ -8,10 +8,8 @@ TODO: sass!
 */
 
 /*reset values */
-ul {
+ul, h1, h2, h3 {
   -webkit-padding-start: 0;
-}
-h2, h3 {
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0em;
 }
@@ -33,6 +31,11 @@ body {
   min-height: 100%;
   position: relative;
 }
+h1 {
+  display: inline-block;
+  padding-top: 0.4rem;
+  margin-left: 1rem;
+}
 img {
   max-width: 100%;
 }
@@ -47,13 +50,24 @@ a:hover {
 a:visited {
   color: #375d81;
 }
+header {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
 main {
   padding-bottom: 2rem;
+  margin-bottom: 1rem;
+  padding: 0 0.5rem;
+  font-size:1.25rem;
+  line-height:1.5;
 }
 footer {
   position: absolute;
   bottom: 0;
   left: 0;
+  margin-top: 2rem;
   background: #183152;
   color: #fff;
   width: calc(100% - 2rem);
