@@ -11,7 +11,7 @@
     <link href="styles/states.css" type="text/css" rel="stylesheet">
     <link href="styles/icons/icons.css" type="text/css" rel="stylesheet">
     <script id="project-render" type="text/x-handlebars-template">
-    <article data-category={{category}}>
+    <article data-category='{{category}}'>
      <header>
        <h3><a href="{{projectUrl}}">{{title}}</a></h3>
          <div class="byline">
@@ -19,6 +19,7 @@
        </div>
      </header>
      <section class="article-body">{{{body}}}</section>
+     <div class="linebreak"></div>
     </script>
     <title>Peter's Portfolio</title>
   </head>
