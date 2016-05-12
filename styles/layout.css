@@ -7,3 +7,6 @@
 section h2, select {
   margin-bottom: 1rem;
 }
+.nav-menu, .icon-menu {
+  padding-right: 1rem;
+}
