@@ -10,12 +10,20 @@
     <link href="styles/modules.css" type="text/css" rel="stylesheet">
     <link href="styles/states.css" type="text/css" rel="stylesheet">
     <link href="styles/icons/icons.css" type="text/css" rel="stylesheet">
-    <script id="project-render">
+    <script id="project-render" type="text/x-handlebars-template">
+    <article data-category={{category}}>
+     <header>
+       <h3><a href="{{projectUrl}}">{{title}}</a></h3>
+         <div class="byline">
+          published <time pubdate datetime="2000-01-01">{{publishedOn}}</time>, {{publishStatus}}.
+       </div>
+     </header>
+     <section class="article-body">{{{body}}}</section>
     </script>
     <title>Peter's Portfolio</title>
   </head>
   <body>
-    <header class="clearfix">
+    <header class="clearfix top-header">
       <h1>Peter Breen</h1>
       <nav>
         <div class="icon-menu"></div>
@@ -37,16 +45,7 @@
           <select id="category-filter">
             <option value="">- All Categories -</option>
           </select>
-       <article class="template" data-category="cat">
-         <header>
-           <h3>Project Title</h3>
-             <div class="byline">
-              <a href="">published <time pubdate datetime="2000-01-01">Publish Time</time></a>
-           </div>
-         </header>
-         <section class="article-body">
-         </section>
-        </article>
+          <div id="project-render"></div>
        </section>
        <section id="contact" class="tab-content">
          <h2>Contact</h2>
