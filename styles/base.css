@@ -8,10 +8,8 @@ TODO: sass!
 */
 
 /*reset values */
-ul {
+ul, h1, h2, h3 {
   -webkit-padding-start: 0;
-}
-h2, h3 {
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0em;
 }
@@ -35,6 +33,7 @@ body {
 }
 h1 {
   display: inline-block;
+  padding-top: 0.4rem;
 }
 img {
   max-width: 100%;
@@ -49,6 +48,10 @@ a:hover {
 }
 a:visited {
   color: #375d81;
+}
+header {
+  height: 100%;
+  margin-bottom: 0.5rem;
 }
 main {
   padding-bottom: 2rem;
