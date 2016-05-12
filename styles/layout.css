@@ -4,6 +4,6 @@
   margin: 0 auto 1rem auto;
   padding: 1rem 0 0 0;
 }
-section h2 {
+section h2, select {
   margin-bottom: 1rem;
 }
