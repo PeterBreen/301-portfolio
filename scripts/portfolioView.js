@@ -25,8 +25,8 @@ portfolioView.handleCatFilter = function () {
 };
 
 portfolioView.handleNav = function() {
-  $('.nav-menu').on('click', '.tab', function () {
-    preventDefault();
+  $('.nav-menu').on('click', '.tab', function(event) {
+    event.preventDefault();
     $('.tab-content').hide();
     $('[id="' + $(this).attr('data-content') + '"]').show();
   });
