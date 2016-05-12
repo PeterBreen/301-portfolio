@@ -58,6 +58,7 @@ header {
 }
 main {
   padding-bottom: 2rem;
+  margin-bottom: 1rem;
   padding: 0 0.5rem;
   font-size:1.25rem;
   line-height:1.5;
@@ -66,6 +67,7 @@ footer {
   position: absolute;
   bottom: 0;
   left: 0;
+  margin-top: 2rem;
   background: #183152;
   color: #fff;
   width: calc(100% - 2rem);
