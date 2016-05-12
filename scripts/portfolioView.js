@@ -29,8 +29,9 @@ portfolioView.handleNav = function() {
     event.preventDefault();
     $('.tab-content').hide();
     $('[id="' + $(this).attr('data-content') + '"]').show();
+    $(this).toggleClass('active');
   });
-  //default load = home tab content
+  //default load = first tab, home tab content
   $('.nav-menu .tab:first').click();
 };
 
