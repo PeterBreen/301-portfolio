@@ -16,19 +16,16 @@
       <nav>
         <div class="icon-menu"></div>
         <ul class="nav-menu icon-list">
-          <li><a class="icon-home" href="#">Home</a></li>
-          <li><a class="icon-folder-open" href="#">Projects</a></li>
-          <li><a class="icon-mail" href="#">Contact</a></li>
+          <li class="tab" data-content="home"><a class="icon-home" href="#">Home</a></li>
+          <li class="tab" data-content="projects"><a class="icon-folder-open" href="#">Projects</a></li>
+          <li class="tab" data-content="contact"><a class="icon-mail" href="#">Contact</a></li>
+          <li class="tab" data-content="about"><a class="icon-airplane" href="#">About</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section>
-        <h2>About Me</h2>
-        <p>Hi, I’m Peter.</p>
-        <p>I do front-end development in Seattle, take photos (of airplanes, mostly), and hike mountains from time to time. I used to think I wanted to be an archivist. Now I think about making usable websites.</p>
-        <p>Chances are, if an airplane flies overhead, I can either identify it or look it up. It’s not like I have a frequently-used app just to find out just what model, carrier, and flight it is or anything.</p>
-        <p>I always feel that “about me” pages are like icebreakers at social events, so for the record: Puffins are my favorite breakfast cereal. Feel free to <a href="#contact">contact me below</a> about airplanes, cereal, or work. Whatever suits you.</p>
+      <section id="home">
+
       </section>
       <section id="projects">
         <h2>Projects</h2>
@@ -45,7 +42,6 @@
        </section>
        <section id="contact">
          <h2>Contact</h2>
-         <!--TODO: add clickable icons for social links instead of bullets (e.g. flickr, github, linkedin) -->
          <p><a href="mailto:pbreen@gmail.com">pbreen@gmail.com<br />
          <a href="mailto:peter@peterbreen.info">peter@peterbreen.info</p>
          <ul class="social-list">
@@ -54,6 +50,13 @@
            <li><a class="icon-flickr3" href="https://www.flickr.com/photos/notpsion"></a></li>
            <li><a class="icon-wordpress" href="http://peterbreen.info/wp"></a></li>
          </ul>
+       </section>
+       <section id="about">
+         <h2>About Me</h2>
+         <p>Hi, I’m Peter.</p>
+         <p>I do front-end development in Seattle, take photos (of airplanes, mostly), and hike mountains from time to time. I used to think I wanted to be an archivist. Now I think about making usable websites.</p>
+         <p>Chances are, if an airplane flies overhead, I can either identify it or look it up. It’s not like I have a frequently-used app just to find out just what model, carrier, and flight it is or anything.</p>
+         <p>I always feel that “about me” pages are like icebreakers at social events, so for the record: Puffins are my favorite breakfast cereal. Feel free to contact me about airplanes, cereal, or work. Whatever suits you.</p>
        </section>
       </main>
       <footer>
