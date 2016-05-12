@@ -13,6 +13,17 @@ nav {
 }
 .icon-list {
   display: none;
+  background: #e1e6fa;
+  padding: 1.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.icon-list li {
+  margin: 0.75rem 0;
+}
+.icon-list li:first-of-type {
+  margin-top: 0;
 }
 .social-list li {
   display: inline-block;
