@@ -2,12 +2,10 @@ var portfolioView = {};
 
 portfolioView.populateCatFilter = function() {
   $('article').each(function() {
-    if (!$(this).hasClass('template')) {
-      var catval = $(this).attr('data-category');
-      catOption = '<option value="' + catval + '">' + catval + '</option>';
-      if ($('#category-filter option[value="' + catval + '"]').length === 0) {
-        $('#category-filter').append(catOption);
-      }
+    var catval = $(this).attr('data-category');
+    catOption = '<option value="' + catval + '">' + catval + '</option>';
+    if ($('#category-filter option[value="' + catval + '"]').length === 0) {
+      $('#category-filter').append(catOption);
     }
   });
 };

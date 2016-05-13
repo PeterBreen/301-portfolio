@@ -10,3 +10,6 @@ section h2, select {
 .nav-menu, .icon-menu {
   padding-right: 1rem;
 }
+.nav-menu {
+  padding-top:0.8125rem;
+}
