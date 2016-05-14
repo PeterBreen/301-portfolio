@@ -23,7 +23,9 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
+[class^="icon-"]::before, [class*=" icon-"]::before {
+  margin-right: 0.25rem;
+}
 .icon-home::before {
     content: "\e900";
 }
