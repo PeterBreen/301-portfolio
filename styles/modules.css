@@ -27,6 +27,9 @@ nav {
   margin-top: 0;
   border-top: none;
 }
+.icon-list [class^="icon-"]::before, .icon-list [class*=" icon-"]::before {
+  margin-right: 0.25rem;
+}
 .social-list li {
   display: inline-block;
   padding-right: 0.5rem;
