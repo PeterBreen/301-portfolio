@@ -29,4 +29,13 @@
     padding-left: 1rem;
     padding-right: 1rem;
   }
+  h1 {
+    margin-top: 0;
+  }
+  nav {
+    position: static;
+    float: right;
+    display: inline-block;
+    width: auto;
+  }
 }
