@@ -2,49 +2,18 @@ nav {
   float: right;
   font-size: 2rem;
 }
-.icon-menu {
-  float: right;
-  padding: 0.5rem 0.5rem 0 0;
-}
 .icon-list, .social-list {
   list-style-type: none;
   font-size: 1.5rem;
   line-height: 1.5rem;
 }
-.icon-list {
-  display: none;
-  background: #e1e6fa;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-.icon-list li {
-  margin: 1rem 0;
-  padding: 1rem 2rem;
-  border-top: 1px solid #183152;
-}
-.icon-list li:first-of-type {
-  margin-top: 0;
-  border-top: none;
-}
-.icon-list [class^="icon-"]::before, .icon-list [class*=" icon-"]::before {
-  margin-right: 0.25rem;
-}
+
 .social-list li {
   display: inline-block;
   padding-right: 0.5rem;
 }
 .social-list li:last-child {
   padding: 0;
-}
-.icon-list li {
-  padding-bottom: 0.5rem;
-}
-nav:hover ul {
-  display: block;
-}
-nav li {
-  padding: 0.25rem 0;
 }
 .template {
   display: none;
@@ -64,17 +33,5 @@ nav li {
   main {
     padding-left: 1rem;
     padding-right: 1rem;
-  }
-  .icon-menu {
-    display: none;
-  }
-  .icon-list {
-    display: block;
-  }
-  .icon-list li {
-    display: inline-block;
-    border: 0;
-    padding: 1rem;
-    margin: 0;
   }
 }
