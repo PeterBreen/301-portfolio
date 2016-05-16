@@ -1,3 +1,8 @@
 .active a {
   color: #e1e6fa;
 }
+@media screen and (min-width: 768px) {
+  .active a {
+    color: #000000;
+  }
+}
