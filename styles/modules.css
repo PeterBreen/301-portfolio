@@ -1,13 +1,8 @@
-nav {
-  float: right;
-  font-size: 2rem;
-}
 .icon-list, .social-list {
   list-style-type: none;
   font-size: 1.5rem;
   line-height: 1.5rem;
 }
-
 .social-list li {
   display: inline-block;
   padding-right: 0.5rem;

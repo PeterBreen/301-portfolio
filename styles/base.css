@@ -37,16 +37,17 @@ h1, h2, h3, h4 {
 h1 {
   display: inline-block;
   margin-left: 1rem;
-  font-size: 2.369rem;
+  font-size: 2.074rem;
+  margin-top: 2.5rem;
 }
 h2 {
-  font-size: 2.369rem;
+  font-size: 1.728rem;
 }
 h3 {
-  font-size: 1.777rem;
+  font-size: 1.44rem;
 }
 h4 {
-  font-size: 1.333rem;
+  font-size: 1.2rem;
 }
 img {
   max-width: 100%;
@@ -65,8 +66,6 @@ a:visited {
 header {
   height: 100%;
   width: 100%;
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
 }
 main {
   padding-bottom: 2rem;
@@ -87,8 +86,11 @@ footer {
   padding: 1rem;
 }
 nav {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: inherit;
   background: #183152;
   color: #ffffff;
+  padding: 0.5rem 0;
 }
