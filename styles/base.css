@@ -36,9 +36,9 @@ h1, h2, h3, h4 {
 }
 h1 {
   display: inline-block;
-  margin-left: 1rem;
   font-size: 2.074rem;
   margin-top: 2.5rem;
+  padding: 0 0.5rem;
 }
 h2 {
   font-size: 1.728rem;
@@ -92,5 +92,6 @@ nav {
   width: inherit;
   background: #183152;
   color: #ffffff;
-  padding: 0.5rem 0;
+  text-align: center;
+  line-height: 2.5rem;
 }

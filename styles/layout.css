@@ -10,6 +10,7 @@ section h2, select {
 .icon-list li {
   display: inline-block;
   font-size: 1rem;
+  line-height: 2.5rem;
   width: 21%;
 }
 .icon-list a {
