@@ -64,8 +64,9 @@
   }
   article:nth-of-type(even){
     padding-right: 0;
+    padding-left: 1rem;
   }
-  .linebreak:last-of-type{
+  .linebreak {
     display: none;
   }
 }

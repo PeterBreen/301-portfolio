@@ -21,28 +21,16 @@ portfolioView.handleCatFilter = function () {
     }
   });
 };
+// uncomment this and the function call below to enable "read more" functionality
 
-portfolioView.handleAuthorFilter = function() {
-  $('#author-filter').on('change', function() {
-    if ($(this).val()) {
-      $('article').hide();
-      $('article[data-author="' + $(this).val() + '"]').fadeIn();
-    } else {
-      $('article').fadeIn();
-      $('article.template').hide();
-    }
-    $('#category-filter').val('');
-  });
-};
-
-portfolioView.setTeasers = function() {
-  $('.article-body *:nth-of-type(n+2)').hide();
-  $('#articles').on('click', 'a.read-on', function(e) {
-    e.preventDefault();
-    $(this).parent().find('*').fadeIn();
-    $(this).hide();
-  });
-};
+// portfolioView.setTeasers = function() {
+//   $('.article-body *:nth-of-type(n+2)').hide();
+//   $('#articles').on('click', 'a.read-on', function(e) {
+//     e.preventDefault();
+//     $(this).parent().find('*').fadeIn();
+//     $(this).hide();
+//   });
+// };
 
 portfolioView.handleNav = function() {
   $('.nav-menu').on('click', '.tab', function(event) {
@@ -69,7 +57,7 @@ portfolioView.initIndexPage = function() {
   });
   portfolioView.populateCatFilter();
   portfolioView.handleCatFilter();
-  portfolioView.handleAuthorFilter();
-  portfolioView.setTeasers();
+  //uncomment this and setTeasers above to enable "read more" functionality
+  // portfolioView.setTeasers();
   portfolioView.handleNav();
 };
