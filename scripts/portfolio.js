@@ -9,7 +9,7 @@ Project.all = [];
 Project.prototype.toHtml = function(templateId) {
   var template = Handlebars.compile((templateId).html());
   this.daysAgo = parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000);
-  this.publishStatus = this.publishedOn ? 'published ' + this.daysAgo + ' days ago' : '(draft)';
+  this.publishStatus = this.publishedOn ? + this.daysAgo + ' days ago' : '(draft)';
   return template(this);
 };
 
