@@ -28,6 +28,7 @@
   main {
     padding-left: 1rem;
     padding-right: 1rem;
+    display: flex;
   }
   h1, .icon-list {
     margin-top: 0;
@@ -43,6 +44,9 @@
     width: auto;
     background: transparent;
   }
+  footer {
+    width: calc(100% - 2rem);
+  }
   .icon-list a {
     color: #183152;
   }
@@ -51,5 +55,17 @@
     margin: 0;
     font-size: 1.5rem;
     width: auto;
+  }
+  article {
+    max-width: calc(50% - 1rem);
+    padding-right: 1rem;
+    display: block;
+    float: left;
+  }
+  article:nth-of-type(even){
+    padding-right: 0;
+  }
+  .linebreak:last-of-type{
+    display: none;
   }
 }
