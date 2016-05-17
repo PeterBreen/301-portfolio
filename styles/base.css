@@ -68,7 +68,6 @@ header {
   width: 100%;
 }
 main {
-  padding-bottom: 2rem;
   margin-bottom: 1rem;
   padding: 0 0.5rem;
   padding-bottom: 2rem;
@@ -95,3 +94,7 @@ nav {
   text-align: center;
   line-height: 2.5rem;
 }
+section {
+  padding-bottom: 2rem;
+}
+/*TODO: verify all padding values here are required; there may be some overlap*/
