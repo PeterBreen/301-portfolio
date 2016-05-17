@@ -31,7 +31,7 @@ var renderFromJSON = function() {
     localStorage.portfolioData = JSON.stringify(data);
     portfolioView.initIndexPage();
     $.ajax({
-      type: 'GET',
+      type: 'HEAD',
       url: 'data/portfolioData.json',
       success: function (data, message, xhr) {
         var eTag = xhr.getResponseHeader('eTag');
