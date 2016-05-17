@@ -52,4 +52,13 @@
     font-size: 1.5rem;
     width: auto;
   }
+  article {
+    max-width: calc(50% - 1rem);
+    float: left;
+    padding-right: 1rem;
+    display: block;
+  }
+  article::nth-of-type(even){
+    padding-right: 0;
+  }
 }
