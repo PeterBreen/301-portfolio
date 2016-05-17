@@ -47,6 +47,7 @@
 
   portfolioView.initIndexPage = function() {
     Project.all.forEach(function(a){
+      //rick said I can keep this as a forEach because it involves the DOM
       if($('#category-filter option:contains("'+ a.category + '")').length === 0) {
         $('#category-filter').append(a.toHtml($('#category-filter-template')));
       };
@@ -54,8 +55,8 @@
         $('#author-filter').append(a.toHtml($('#author-filter-template')));
       };
       $('#projects').append(a.toHtml($('#project-render')));
-
     });
+
     portfolioView.populateCatFilter();
     portfolioView.handleCatFilter();
     //uncomment this and setTeasers above to enable "read more" functionality

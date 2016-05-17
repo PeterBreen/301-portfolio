@@ -18,11 +18,14 @@ Project.loadAll = function(passedData) {
   passedData.sort(function(a,b) {
     return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
   });
-  passedData.forEach(function(ele) {
-    Project.all.push(new Project(ele));
+//   passedData.forEach(function(ele) {
+//     Project.all.push(new Project(ele));
+//   });
+// };
+  Project.all = passedData.map(function(ele) {
+    return new Project(ele);
   });
 };
-
 
 //reusable function to render from JSON and set localStorage for next loadAll
 var renderFromJSON = function() {
