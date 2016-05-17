@@ -22,6 +22,12 @@
      <section class="article-body">{{{body}}}</section>
      <div class="linebreak"></div>
     </script>
+    <script id="author-filter-template" type="text/x-handlebars-template">
+      <option value="{{author}}">{{author}}</option>
+    </script>
+    <script id="category-filter-template" type="text/x-handlebars-template">
+      <option value="{{category}}">{{category}}</option>
+    </script>
     <title>Peter's Portfolio</title>
   </head>
   <body>
@@ -74,8 +80,10 @@
       </footer>
     <script src="vendor/jquery.min.js"></script> <!-- TODO: make CDN links when deployed - jquery v2.2.2, handlebars 4.0.5 -->
     <script src="vendor/handlebars.min.js"></script>
-    <script src="scripts/portfolioData.js"></script>
     <script src="scripts/portfolio.js"></script>
     <script src="scripts/portfolioView.js"></script>
+    <script>
+      Project.fetchAll();
+    </script>
   </body>
 </html>
