@@ -1,12 +1,9 @@
 var portfolioProjects = [];
 
 function Project (opts) {
-  this.title = opts.title;
-  this.category = opts.category;
-  this.projectUrl = opts.projectUrl;
-  this.publishedOn = opts.publishedOn;
-  this.featureImage = opts.featureImage;
-  this.body = opts.body;
+  for (keys in opts) {
+    this[keys] = opts[keys];
+  }
 }
 
 Project.prototype.toHtml = function() {
