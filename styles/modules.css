@@ -28,6 +28,7 @@
   main {
     padding-left: 1rem;
     padding-right: 1rem;
+    display: flex;
   }
   h1, .icon-list {
     margin-top: 0;
@@ -54,11 +55,14 @@
   }
   article {
     max-width: calc(50% - 1rem);
-    float: left;
     padding-right: 1rem;
     display: block;
+    float: left;
   }
-  article::nth-of-type(even){
+  article:nth-of-type(even){
     padding-right: 0;
+  }
+  .linebreak:last-of-type{
+    display: none;
   }
 }
