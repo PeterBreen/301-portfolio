@@ -14,6 +14,7 @@
     <article data-category='{{category}}'>
      <header>
        <h3><a href="{{projectUrl}}">{{title}}</a></h3>
+       <a href="{{projectUrl}}"><img src="{{featureImage}}" alt="{{title}}"></a>
          <div class="byline">
           published <time pubdate datetime="2000-01-01">{{publishedOn}}</time>, {{publishStatus}}.
        </div>
@@ -68,7 +69,6 @@
        </section>
       </main>
       <footer>
-        <!-- TODO: footer content -->
         <span>&copy; 2016 Peter Breen</span>
       </footer>
     <script src="vendor/jquery.min.js"></script> <!-- TODO: make CDN links when deployed - jquery v2.2.2, handlebars 4.0.5 -->
