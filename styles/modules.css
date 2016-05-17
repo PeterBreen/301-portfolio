@@ -1,31 +1,7 @@
-nav {
-  float: right;
-  font-size: 2rem;
-}
-.icon-menu {
-  float: right;
-  padding: 0.5rem 0.5rem 0 0;
-}
 .icon-list, .social-list {
   list-style-type: none;
   font-size: 1.5rem;
   line-height: 1.5rem;
-}
-.icon-list {
-  display: none;
-  background: #e1e6fa;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-.icon-list li {
-  margin: 1rem 0;
-  padding: 1rem 2rem;
-  border-top: 1px solid #183152;
-}
-.icon-list li:first-of-type {
-  margin-top: 0;
-  border-top: none;
 }
 .social-list li {
   display: inline-block;
@@ -33,15 +9,6 @@ nav {
 }
 .social-list li:last-child {
   padding: 0;
-}
-.icon-list li {
-  padding-bottom: 0.5rem;
-}
-nav:hover ul {
-  display: block;
-}
-nav li {
-  padding: 0.25rem 0;
 }
 .template {
   display: none;
@@ -62,16 +29,27 @@ nav li {
     padding-left: 1rem;
     padding-right: 1rem;
   }
-  .icon-menu {
-    display: none;
+  h1, .icon-list {
+    margin-top: 0;
+    line-height: 3rem;
   }
-  .icon-list {
-    display: block;
+  h1 {
+    padding: 1rem;
+  }
+  nav {
+    position: static;
+    float: right;
+    display: inline-block;
+    width: auto;
+    background: transparent;
+  }
+  .icon-list a {
+    color: #183152;
   }
   .icon-list li {
-    display: inline-block;
-    border: 0;
     padding: 1rem;
     margin: 0;
+    font-size: 1.5rem;
+    width: auto;
   }
 }
