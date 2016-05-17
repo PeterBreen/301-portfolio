@@ -85,7 +85,7 @@ footer {
   margin-top: 2rem;
   background: #183152;
   color: #ffffff;
-  width: calc(100% - 2rem);
+  width: 100%;
   padding: 1rem;
 }
 nav {
