@@ -7,9 +7,12 @@
 section h2, select {
   margin-bottom: 1rem;
 }
-.nav-menu, .icon-menu {
-  padding-right: 1rem;
+.icon-list li {
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 2.5rem;
+  width: 21%;
 }
-.nav-menu {
-  padding-top:0.8125rem;
+.icon-list a {
+  color: #ffffff;
 }
