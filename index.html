@@ -14,12 +14,19 @@
     <article data-category='{{category}}'>
      <header>
        <h3><a href="{{projectUrl}}">{{title}}</a></h3>
+       <a href="{{projectUrl}}"><img src="{{featureImage}}" alt="{{title}}"></a>
          <div class="byline">
           published <time pubdate datetime="2000-01-01">{{publishedOn}}</time>, {{publishStatus}}.
        </div>
      </header>
      <section class="article-body">{{{body}}}</section>
      <div class="linebreak"></div>
+    </script>
+    <script id="author-filter-template" type="text/x-handlebars-template">
+      <option value="{{author}}">{{author}}</option>
+    </script>
+    <script id="category-filter-template" type="text/x-handlebars-template">
+      <option value="{{category}}">{{category}}</option>
     </script>
     <title>Peter's Portfolio</title>
   </head>
@@ -40,6 +47,7 @@
       <section id="home" class="tab-content">
         <p>Gonna be honest with you, I'm not sure what to put in the home section right now. However, if you're seeing this, I can confirm you are in fact looking at the home section instead of Projects or Contact!</p>
         <p>Here's a list of three random things: rems are the best unit, MDN > w3schools, and I know someone who has to maintain an IE6 intranet. Scary stuff.</p>
+        <img src="http://placehold.it/960x360" alt="placeholder"><!-- TODO: make proper fluid ratio resize responsive header image here-->
       </section>
       <section id="projects" class="tab-content">
         <h2>Projects</h2>
@@ -68,13 +76,14 @@
        </section>
       </main>
       <footer>
-        <!-- TODO: footer content -->
         <span>&copy; 2016 Peter Breen</span>
       </footer>
     <script src="vendor/jquery.min.js"></script> <!-- TODO: make CDN links when deployed - jquery v2.2.2, handlebars 4.0.5 -->
     <script src="vendor/handlebars.min.js"></script>
-    <script src="scripts/portfolioData.js"></script>
     <script src="scripts/portfolio.js"></script>
     <script src="scripts/portfolioView.js"></script>
+    <script>
+      Project.fetchAll();
+    </script>
   </body>
 </html>
