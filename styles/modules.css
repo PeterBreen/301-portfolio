@@ -55,6 +55,10 @@
     margin: 0;
     font-size: 1.5rem;
     width: auto;
+    color: #183152;
+  }
+  .nav-menu a {
+    margin-left: 0.5rem;
   }
   article {
     max-width: calc(50% - 1rem);
