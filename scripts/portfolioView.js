@@ -56,7 +56,7 @@
       };
       $('#projects').append(a.toHtml($('#project-render')));
     });
-
+    $('#home .words').text(Project.numWordsAll());
     portfolioView.populateCatFilter();
     portfolioView.handleCatFilter();
     //uncomment this and setTeasers above to enable "read more" functionality
