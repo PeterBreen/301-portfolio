@@ -18,11 +18,11 @@ Project.loadAll = function(passedData) {
   passedData.sort(function(a,b) {
     return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
   });
-  passedData.forEach(function(ele) {
-    Project.all.push(new Project(ele));
+
+  Project.all = passedData.map(function(ele) {
+    return new Project(ele);
   });
 };
-
 
 //reusable function to render from JSON and set localStorage for next loadAll
 var renderFromJSON = function() {
@@ -31,7 +31,7 @@ var renderFromJSON = function() {
     localStorage.portfolioData = JSON.stringify(data);
     portfolioView.initIndexPage();
     $.ajax({
-      type: 'GET',
+      type: 'HEAD',
       url: 'data/portfolioData.json',
       success: function (data, message, xhr) {
         var eTag = xhr.getResponseHeader('eTag');
@@ -60,4 +60,13 @@ Project.fetchAll = function() {
   } else {
     renderFromJSON();
   }
+};
+
+Project.numWordsAll = function() {
+  return Project.all.map(function(project) {
+    return project.body.match(/\b\w+/g).length;
+  })
+  .reduce(function(a, b) {
+    return a + b;
+  });
 };
