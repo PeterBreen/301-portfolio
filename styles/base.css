@@ -56,13 +56,6 @@ a {
   color: #183152;
   text-decoration: none;
 }
-a:hover {
-  color: #183152;
-  text-decoration: underline;
-}
-a:visited {
-  color: #375d81;
-}
 header {
   height: 100%;
   width: 100%;
