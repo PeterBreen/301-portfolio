@@ -1,12 +1,3 @@
-a:hover {
-  color: #183152;
-  text-decoration: underline;
-}
-a:visited {
-  color: #375d81;
-}
-
-
 @media screen and (min-width: 768px) {
   body {
     max-width: 960px;
