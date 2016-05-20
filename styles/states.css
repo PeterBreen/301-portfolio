@@ -5,14 +5,8 @@ a:hover {
 a:visited {
   color: #375d81;
 }
-.active a {
-  color: #e1e6fa;
-}
-@media screen and (min-width: 768px) {
-  .active a {
-    color: #000000;
-  }
-}
+
+
 @media screen and (min-width: 768px) {
   body {
     max-width: 960px;
@@ -66,5 +60,15 @@ a:visited {
   }
   .linebreak {
     display: none;
+  }
+}
+
+/*active states; should be last in the stack */
+.active a {
+  color: #e1e6fa;
+}
+@media screen and (min-width: 768px) {
+  .active a {
+    color: #000000;
   }
 }
