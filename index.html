@@ -14,7 +14,7 @@
     <article data-category='{{category}}'>
      <header>
        <h3><a href="{{projectUrl}}">{{title}}</a></h3>
-       <a href="{{projectUrl}}"><img src="{{featureImage}}" alt="{{title}}"></a>
+       <a href="{{projectUrl}}"><img src="{{featureImage}}" alt="{{title}} project"></a>
          <div class="byline">
           published <time pubdate datetime="2000-01-01">{{publishedOn}}</time>, {{publishStatus}}.
        </div>
@@ -33,11 +33,11 @@
   <body>
     <header class="clearfix top-header">
       <nav>
-        <ul class="nav-menu icon-list">
-          <li class="tab" data-content="home"><a class="icon-home" href="#">Home</a></li>
-          <li class="tab" data-content="projects"><a class="icon-folder-open" href="#">Projects</a></li>
-          <li class="tab" data-content="contact"><a class="icon-mail" href="#">Contact</a></li>
-          <li class="tab" data-content="about"><a class="icon-airplane" href="#">About</a></li>
+        <ul class="nav-menu icon-list"> <!--todo: investigate mobile-only width issue here. Does mobile safari not handle calc()? -->
+          <li class="tab icon-home" data-content="home"><a href="#">Home</a></li>
+          <li class="tab icon-folder-open" data-content="projects"><a href="#">Projects</a></li>
+          <li class="tab icon-mail" data-content="contact"><a href="#">Contact</a></li>
+          <li class="tab icon-airplane" data-content="about"><a href="#">About</a></li>
         </ul>
       </nav>
       <h1>Peter Breen</h1>
@@ -47,7 +47,7 @@
       <section id="home" class="tab-content">
         <p>Gonna be honest with you, I'm not sure what to put in the home section right now. However, if you're seeing this, I can confirm you are in fact looking at the home section instead of Projects or Contact!</p>
         <p>Here's a list of three random things: rems are the best unit, MDN > w3schools, and I know someone who has to maintain an IE6 intranet. Scary stuff.</p>
-        <img src="http://placehold.it/960x360" alt="placeholder"><!-- TODO: make proper fluid ratio resize responsive header image here-->
+        <!-- <p>Number of words I've written about projects so far: <span class="words"></span></p> -->
       </section>
       <section id="projects" class="tab-content">
         <h2>Projects</h2>
@@ -66,6 +66,7 @@
            <li><a class="icon-flickr3" href="https://www.flickr.com/photos/notpsion"></a></li>
            <li><a class="icon-wordpress" href="http://peterbreen.info/wp"></a></li>
          </ul>
+         <img src="http://placehold.it/960x360" alt="placeholder" class="feature-img">
        </section>
        <section id="about" class="tab-content">
          <h2>About Me</h2>
@@ -84,8 +85,8 @@
           <li><a class="icon-wordpress" href="http://peterbreen.info/wp"></a></li>
         </ul>
       </footer>
-    <script src="vendor/jquery.min.js"></script> <!-- TODO: make CDN links when deployed - jquery v2.2.2, handlebars 4.0.5 -->
-    <script src="vendor/handlebars.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
     <script src="scripts/portfolio.js"></script>
     <script src="scripts/portfolioView.js"></script>
     <script>

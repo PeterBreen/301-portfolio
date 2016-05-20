@@ -4,6 +4,13 @@
   margin: 0 auto 1rem auto;
   padding: 1rem 0 0 0;
 }
+a:hover {
+  color: #183152;
+  text-decoration: underline;
+}
+a:visited {
+  color: #375d81;
+}
 section h2, select {
   margin-bottom: 1rem;
 }
@@ -23,6 +30,10 @@ footer ul {
   color: #fff;
   font-size: 1rem;
 }
-section .tab-content {
-  padding-bottom: 2rem;
+footer .social-list {
+  font-size: 1rem;
+  padding-right: 1rem;
+}
+.feature-img {
+  height: 22.5rem;
 }
