@@ -63,13 +63,13 @@
     }
   };
 
-  Project.numWordsAll = function() {
-    return Project.all.map(function(project) {
-      return project.body.match(/\b\w+/g).length;
-    })
-    .reduce(function(a, b) {
-      return a + b;
-    });
-  };
+  // Project.numWordsAll = function() {
+  //   return Project.all.map(function(project) {
+  //     return project.body.match(/\b\w+/g).length;
+  //   })
+  //   .reduce(function(a, b) {
+  //     return a + b;
+  //   });
+  // };
   module.Project = Project;
 })(window);
