@@ -80,8 +80,9 @@ footer {
   margin-top: 2rem;
   background: #183152;
   color: #ffffff;
-  width: 100%;
   padding: 1rem;
+  max-width: 100%;
+  width: calc(100% - 2rem);
 }
 nav {
   position: fixed;
@@ -92,8 +93,8 @@ nav {
   color: #ffffff;
   text-align: center;
   line-height: 2.5rem;
+  width: 100%;
 }
 section {
   padding-bottom: 2rem;
 }
-/*TODO: verify all padding values here are required; there may be some overlap*/
