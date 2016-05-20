@@ -16,7 +16,7 @@ ul, h1, h2, h3 {
 
 /*actual base styles */
 html {
-  font-size: 100%;
+  font-size: 100%; /* 100% = 16px = 1rem */
   font-family: 'Fira Sans', sans-serif;
   background: #ffffff;
   color: #222222;
