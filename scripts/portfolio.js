@@ -41,24 +41,20 @@
   };
   //localstorage or JSON data source control
   Project.fetchAll = function() {
-    if (localStorage.portfolioData) {
-      $.ajax({
-        type: 'HEAD',
-        url: 'data/portfolioData.json',
-        success: function (data, message, xhr) {
-          var currentTag = xhr.getResponseHeader('eTag');
-          if (currentTag === localStorage.eTag) {
-            parsedLocal = JSON.parse(localStorage.portfolioData);
-            Project.loadAll(parsedLocal);
-            portfolioView.initIndexPage();
-          } else {
-            renderFromJSON();
-          }
+    $.ajax({
+      type: 'HEAD',
+      url: 'data/portfolioData.json',
+      success: function (data, message, xhr) {
+        var currentTag = xhr.getResponseHeader('eTag');
+        if (currentTag === localStorage.eTag || localStorage.portfolioData) {
+          parsedLocal = JSON.parse(localStorage.portfolioData);
+          Project.loadAll(parsedLocal);
+          portfolioView.initIndexPage();
+        } else {
+          renderFromJSON();
         }
-      });
-    } else {
-      renderFromJSON();
-    }
+      }
+    });
   };
 
   // Project.numWordsAll = function() {
