@@ -8,7 +8,8 @@
 ehthumbs.db
 Thumbs.db
 
-# Vendor files #
+# Portfolio-specific files #
 ################
 jquery.min.js
 handlebars.min.js
+/node_modules
