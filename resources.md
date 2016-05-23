@@ -5,4 +5,4 @@
  - Handlebars.js http://handlebarsjs.com/
  - Icomoon https://icomoon.io/app/#/select
  - Normalize.css https://necolas.github.io/normalize.css/
- 
+ - Fluid Ratio Resize Calculator http://fofwebdesign.co.uk/template/_testing/scale-img/fluid-ratio-resize.htm
