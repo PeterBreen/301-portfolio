@@ -1,0 +1,33 @@
+.icon-list li {
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 2.5rem;
+  width: 21%;
+}
+.icon-list a {
+  color: $white;
+}
+.icon-list, .social-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+.social-list li {
+  display: inline-block;
+  padding-right: 0.5rem;
+}
+.social-list li:last-child {
+  padding: 0;
+}
+@media screen and (min-width: 48rem) {
+  .icon-list a {
+    color: $blue5;
+  }
+  .icon-list li {
+    padding: 1rem;
+    margin: 0;
+    font-size: 1.5rem;
+    width: auto;
+    color: $blue5;
+  }
+}
