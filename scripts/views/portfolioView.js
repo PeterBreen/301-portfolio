@@ -33,18 +33,6 @@
   //   });
   // };
 
-  portfolioView.handleNav = function() {
-    $('.nav-menu').on('click', '.tab', function(event) {
-      event.preventDefault();
-      $('.nav-menu li').removeClass('active');
-      $('.tab-content').hide();
-      $('[id="' + $(this).attr('data-content') + '"]').show();
-      $(this).toggleClass('active');
-    });
-    //default load = first tab, home tab content
-    $('.nav-menu .tab:first').click();
-  };
-
   portfolioView.initIndexPage = function() {
     Project.all.forEach(function(a){
       //rick said I can keep this as a forEach because it involves the DOM
@@ -61,7 +49,6 @@
     portfolioView.handleCatFilter();
     //uncomment this and setTeasers above to enable "read more" functionality
     // portfolioView.setTeasers();
-    portfolioView.handleNav();
   };
   module.portfolioView = portfolioView;
 })(window);
