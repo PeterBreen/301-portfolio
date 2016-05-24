@@ -13,3 +13,13 @@ Thumbs.db
 jquery.min.js
 handlebars.min.js
 /node_modules
+/scripts/gittoken.js
+/styles/.sass-cache
+
+
+# old CSS files #
+#################
+base.css
+layout.css
+modules.css
+states.css
