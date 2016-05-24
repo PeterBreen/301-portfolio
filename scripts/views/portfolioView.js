@@ -35,7 +35,6 @@
 
   portfolioView.initIndexPage = function() {
     Project.all.forEach(function(a){
-      //rick said I can keep this as a forEach because it involves the DOM
       if($('#category-filter option:contains("'+ a.category + '")').length === 0) {
         $('#category-filter').append(a.toHtml($('#category-filter-template')));
       };
