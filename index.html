@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="vendor/normalize.css" type="text/css" rel="stylesheet">
+    <link href="/vendor/styles/normalize.css" type="text/css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700|Roboto+Slab' rel='stylesheet' type='text/css'>
-    <link href="styles/base.css" type="text/css" rel="stylesheet">
-    <link href="styles/layout.css" type="text/css" rel="stylesheet">
-    <link href="styles/modules.css" type="text/css" rel="stylesheet">
-    <link href="styles/states.css" type="text/css" rel="stylesheet">
-    <link href="styles/icons/icons.css" type="text/css" rel="stylesheet">
+    <link href="/styles/base.css" type="text/css" rel="stylesheet">
+    <link href="/styles/layout.css" type="text/css" rel="stylesheet">
+    <link href="/styles/modules.css" type="text/css" rel="stylesheet">
+    <link href="/styles/states.css" type="text/css" rel="stylesheet">
+    <link href="/styles/icons/icons.css" type="text/css" rel="stylesheet">
     <script id="project-render" type="text/x-handlebars-template">
     <article data-category='{{category}}'>
      <header>
@@ -33,11 +33,11 @@
   <body>
     <header class="clearfix top-header">
       <nav>
-        <ul class="nav-menu icon-list"> <!--todo: investigate mobile-only width issue here. Does mobile safari not handle calc()? -->
-          <li class="tab icon-home" data-content="home"><a href="#">Home</a></li>
-          <li class="tab icon-folder-open" data-content="projects"><a href="#">Projects</a></li>
-          <li class="tab icon-mail" data-content="contact"><a href="#">Contact</a></li>
-          <li class="tab icon-airplane" data-content="about"><a href="#">About</a></li>
+        <ul class="nav-menu icon-list">
+          <li class="tab icon-home" data-content="home"><a href="/">Home</a></li>
+          <li class="tab icon-folder-open" data-content="projects"><a href="/projects">Projects</a></li>
+          <li class="tab icon-mail" data-content="contact"><a href="/contact">Contact</a></li>
+          <li class="tab icon-airplane" data-content="about"><a href="/about">About</a></li>
         </ul>
       </nav>
       <h1>Peter Breen</h1>
@@ -47,7 +47,6 @@
       <section id="home" class="tab-content">
         <p>Gonna be honest with you, I'm not sure what to put in the home section right now. However, if you're seeing this, I can confirm you are in fact looking at the home section instead of Projects or Contact!</p>
         <p>Here's a list of three random things: rems are the best unit, MDN > w3schools, and I know someone who has to maintain an IE6 intranet. Scary stuff.</p>
-        <!-- <p>Number of words I've written about projects so far: <span class="words"></span></p> -->
       </section>
       <section id="projects" class="tab-content">
         <h2>Projects</h2>
@@ -89,10 +88,14 @@
       </footer>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
-    <script src="scripts/portfolio.js"></script>
-    <script src="scripts/portfolioView.js"></script>
-    <script>
-      Project.fetchAll();
-    </script>
+    <script src="/vendor/scripts/page.js"></script>
+    <script src="/scripts/models/portfolio.js"></script>
+    <script src="/scripts/views/portfolioView.js"></script>
+    <script src="/scripts/controllers/aboutController.js"></script>
+    <script src="/scripts/controllers/contactController.js"></script>
+    <script src="/scripts/controllers/homeController.js"></script>
+    <script src="/scripts/controllers/projectsController.js"></script>
+    <script src="/scripts/controllers/routes.js"></script>
+
   </body>
 </html>
