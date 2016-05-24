@@ -2,7 +2,7 @@
   var contactController = {};
   contactController.index = function() {
     $('section').hide();
-    $('#contact').fadeIn('fast');
+    $('#contact').show();
   };
   module.contactController = contactController;
 })(window);

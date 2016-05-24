@@ -3,7 +3,7 @@
   projectsController.index = function() {
     Project.fetchAll();
     $('section').hide();
-    $('#projects').fadeIn('fast');
+    $('#projects').show();
   };
   module.projectsController = projectsController;
 })(window);

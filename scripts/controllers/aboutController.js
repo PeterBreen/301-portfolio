@@ -2,7 +2,7 @@
   var aboutController = {};
   aboutController.index = function() {
     $('section').hide();
-    $('#about').fadeIn('fast');
+    $('#about').show();
   };
   module.aboutController = aboutController;
 })(window);
