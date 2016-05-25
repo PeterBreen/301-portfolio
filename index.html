@@ -23,6 +23,9 @@
     <script id="category-filter-template" type="text/x-handlebars-template">
       <option value="{{category}}">{{category}}</option>
     </script>
+    <script id="github-stats" type="text/x-handlebars-template">
+      <p>Interested in some Github stats? I have {{numrepos}} non-forked repos containing {{codelines}} of code!</p>
+    </script>
     <title>Peter's Portfolio</title>
   </head>
   <body>
@@ -42,6 +45,7 @@
       <section id="home" class="tab-content">
         <p>Gonna be honest with you, I'm not sure what to put in the home section right now. However, if you're seeing this, I can confirm you are in fact looking at the home section instead of Projects or Contact!</p>
         <p>Here's a list of three random things: rems are the best unit, MDN > w3schools, and I know someone who has to maintain an IE6 intranet. Scary stuff.</p>
+        <div id="github-stats"></div>
       </section>
       <section id="projects" class="tab-content">
         <h2>Projects</h2>
@@ -83,14 +87,16 @@
       </footer>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+    <script src="/scripts/gittoken.js"></script>
     <script src="/vendor/scripts/page.js"></script>
     <script src="/scripts/models/portfolio.js"></script>
+    <script src="/scripts/models/repo.js"></script>
     <script src="/scripts/views/portfolioView.js"></script>
+    <script src="/scripts/views/repoView.js"></script>
     <script src="/scripts/controllers/aboutController.js"></script>
     <script src="/scripts/controllers/contactController.js"></script>
     <script src="/scripts/controllers/homeController.js"></script>
     <script src="/scripts/controllers/projectsController.js"></script>
     <script src="/scripts/controllers/routes.js"></script>
-
   </body>
 </html>
