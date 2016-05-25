@@ -1,20 +1,12 @@
 (function(module) {
   var repoView = {};
-
-  var render = Handlebars.compile($('#github-stats').text());
-
   repoView.index = function() {
-    //get all repos, filter for fork: false;
-    //take this new array, array.length +1 for {{numrepos}} and reduce size:  to {{codelines}}
-
-    $('#github-stats').append(
-      repos.with('name').map(render)
-    );
-    /* NOTE: This jQuery `append` method lets us append an entire array
-        of HTML elements at once, so we can use a little FP to
-        transform our data-set into DOM nodes. "repos.with"
-        is a method we wrote in the repos model. */
+    //function takes ajax call from github and determines how many are unforked - array.length to determine number of unforked repos, lineCount to determine linecount of all unforked repos
+    unforked = repos.unforked(repos.all);
+    numrepos = unforked.length;
+    codelines = repos.lineCount(unforked);
+    gitstats = '<p>Interested in some <a href=\"http://www.github.com/PeterBreen\">Github</a> stats? I have <strong>' + numrepos + '</strong> non-forked repos containing <strong>' + codelines + '</strong> lines of code!</p>';
+    $('#github-stats').append(gitstats);
   };
-
   module.repoView = repoView;
 })(window);
