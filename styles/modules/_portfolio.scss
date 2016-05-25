@@ -1,0 +1,22 @@
+section h2, select {
+  margin-bottom: 1rem;
+}
+.byline {
+ font-style: italic;
+}
+.article-body:last-of-type {
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 48rem) {
+  article {
+    max-width: calc(50% - 1rem);
+    padding-right: 1rem;
+    display: block;
+    float: left;
+  }
+  article:nth-of-type(even){
+    padding-right: 0;
+    padding-left: 1rem;
+  }
+}

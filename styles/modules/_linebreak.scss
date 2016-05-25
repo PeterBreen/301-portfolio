@@ -1,0 +1,11 @@
+.linebreak {
+  width: 33%;
+  border-top: 1px solid #abc8e2;
+  margin: 0 auto 1rem auto;
+  padding: 1rem 0 0 0;
+}
+@media screen and (min-width: 48rem) {
+  .linebreak {
+    display: none;
+  }
+}

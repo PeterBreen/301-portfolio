@@ -1,0 +1,28 @@
+header {
+  height: 100%;
+  width: 100%;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: inherit;
+  background: $blue5;
+  color: $white;
+  text-align: center;
+  line-height: 2.5rem;
+  width: 100%;
+}
+@media screen and (min-width: 48rem) {
+  nav {
+    position: static;
+    float: right;
+    display: inline-block;
+    width: auto;
+    background: transparent;
+  }
+
+  .nav-menu a {
+    margin-left: 0.5rem;
+  }
+}

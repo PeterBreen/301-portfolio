@@ -2,6 +2,7 @@
   var projectsController = {};
   projectsController.index = function() {
     Project.fetchAll();
+    $('article').remove();
     $('section').hide();
     $('#projects').show();
   };

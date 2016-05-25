@@ -1,0 +1,8 @@
+.active a {
+  color: $blue1;
+}
+@media screen and (min-width: 48rem) {
+  .active a {
+    color: #000000;
+  }
+}
