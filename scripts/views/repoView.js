@@ -1,7 +1,6 @@
 (function(module) {
   var repoView = {};
   repoView.index = function() {
-    //function takes ajax call from github and determines how many are unforked - array.length to determine number of unforked repos, lineCount to determine linecount of all unforked repos
     unforked = repos.unforked(repos.all);
     numrepos = unforked.length;
     codelines = repos.lineCount(unforked);
