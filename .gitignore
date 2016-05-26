@@ -23,3 +23,8 @@ base.css
 layout.css
 modules.css
 states.css
+
+# SASS partials #
+################
+*.scss
+*.map
