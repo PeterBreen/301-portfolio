@@ -2,16 +2,11 @@
   var repos = {};
 
   repos.all = [];
-
   repos.requestRepos = function(callback) {
-    $.ajax({
-      url: 'https://api.github.com/users/' + gituser + '/repos' + '?sort=updated',
-      type: 'GET', headers: {'Authorization': 'token ' + gittoken},
-      success: function(data, message, xhr) {
+    $.get('/github/users/PeterBreen/repos')
+      .done(function(data){
         repos.all = data;
-        callback();
-      }
-    });
+      }).done(callback);
   };
 
   repos.with = function(attr) {
