@@ -46,7 +46,7 @@
       url: 'data/portfolioData.json',
       success: function (data, message, xhr) {
         var currentTag = xhr.getResponseHeader('eTag');
-        if (currentTag === localStorage.eTag || localStorage.portfolioData) {
+        if (currentTag === localStorage.eTag && localStorage.portfolioData) {
           parsedLocal = JSON.parse(localStorage.portfolioData);
           Project.loadAll(parsedLocal);
           portfolioView.initIndexPage();
