@@ -194,7 +194,10 @@ section h2, select {
 
   article:nth-of-type(even) {
     padding-right: 0;
-    padding-left: 1rem; } }
+    padding-left: 1rem; }
+
+  article:nth-of-type(odd) {
+    clear: left; } }
 .active a {
   color: #e1e6fa; }
 
