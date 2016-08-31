@@ -11,7 +11,7 @@
 	"projectUrl": "https://portfolio-peter-301d4.herokuapp.com/",
 	"publishedOn": "2016-05-26",
 	"featureImage": "http://placehold.it/448x300",
-	"body": "<p>You're looking at it! During the entire Code 301 class, we built a portfolio project in tandem with our class projects - daily functionality extension and code refactor. It's a single-page app, deployed to Heroku, using Node, Page, jQuery, Ajax, HTML5 and CSS3. This portfolio is also built with SASS for the stylesheets and proper MVC architecture. Source code is available <a href=\"https://github.com/PeterBreen/301-portfolio\">on Github</a>. And special thanks to placehold.it ;)</p>"
+	"body": "<p>You're looking at it! During the entire Code 301 class, we built a portfolio project in tandem with our class projects - daily functionality extension and code refactor. It's a single-page app, deployed to Heroku, using Node, Page, jQuery, Ajax, Icomoon, HTML5 and CSS3. This portfolio is also built with SASS for the stylesheets and proper MVC architecture. Source code is available <a href=\"https://github.com/PeterBreen/301-portfolio\">on Github</a>. And special thanks to placehold.it ;)</p>"
 }, {
 	"title": "Welcome to Seattle",
 	"category": "Code 201",
