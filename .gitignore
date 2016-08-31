@@ -8,6 +8,11 @@
 ehthumbs.db
 Thumbs.db
 
+# Heroku Suggested #
+###############
+npm-debug.log
+/*.env
+
 # Portfolio-specific files #
 ################
 jquery.min.js
