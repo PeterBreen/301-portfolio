@@ -38,12 +38,8 @@
       if($('#category-filter option:contains("'+ a.category + '")').length === 0) {
         $('#category-filter').append(a.toHtml($('#category-filter-template')));
       };
-      if($('#author-filter option:contains("'+ a.author + '")').length === 0) {
-        $('#author-filter').append(a.toHtml($('#author-filter-template')));
-      };
       $('#projects').append(a.toHtml($('#project-render')));
     });
-    // $('#home .words').text(Project.numWordsAll());
     portfolioView.populateCatFilter();
     portfolioView.handleCatFilter();
     //uncomment this and setTeasers above to enable "read more" functionality
