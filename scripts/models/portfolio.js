@@ -4,7 +4,7 @@
       this[keys] = opts[keys];
     }
   }
-  //Attach to the constructor, not global
+  //Attached to the constructor, not global namespace
   Project.all = [];
 
   Project.prototype.toHtml = function(templateId) {
@@ -14,7 +14,7 @@
     return template(this);
   };
 
-  // Sort our data by date published, descending order
+  // Sort data by date published, descending order
   Project.loadAll = function(passedData) {
     passedData.sort(function(a,b) {
       return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
@@ -25,7 +25,7 @@
     });
   };
 
-  //reusable function to render from JSON and set localStorage for next loadAll
+  // render portfolio from JSON and set localStorage for a faster subsequent loadAll
   var renderFromJSON = function() {
     $.getJSON({
       type: 'GET',
@@ -39,7 +39,7 @@
       }
     });
   };
-  //localstorage or JSON data source control
+  //check for loading from localstorage or JSON
   Project.fetchAll = function() {
     $.ajax({
       type: 'HEAD',

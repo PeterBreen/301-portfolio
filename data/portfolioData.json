@@ -1,17 +1,17 @@
 [{
-		"title": "Pronto Bike Map",
-		"category": "Code 301",
-		"projectUrl": "https://bike-map-fd305.firebaseapp.com/",
-		"publishedOn": "2016-06-03",
+			"title": "Pronto Bike Map",
+			"category": "Code 301",
+			"projectUrl": "https://bike-map-fd305.firebaseapp.com/",
+			"publishedOn": "2016-06-03",
+			"featureImage": "http://placehold.it/448x300",
+			"body": "<p>This app uses the Pronto API to power a Google Map showing realtime bike availability per station and allowing a user to get directions to the nearest bike station. A backend Heroku app grabs the API's JSON data every 5 minutes and feeds it into a Firebase database for our stats page, showing historical availability statistics for each station in the system.</p>"
+	},{
+		"title": "Design by SML",
+		"category": "Freelance",
+		"projectUrl": "https://designbysml.com",
+		"publishedOn": "2016-06-01",
 		"featureImage": "http://placehold.it/448x300",
-		"body": "<p>Pronto Bike Maps is our final project from Code Fellows Code 301. This app uses the Pronto API to power a Google Map showing realtime bike availability per station and allowing a user to get directions to the nearest bike station. A backend Heroku app grabs the API's JSON data every 5 minutes and feeds it into a Firebase database for our stats page, showing historical availability statistics for each station in the system.</p>"
-}, {
-	"title": "301 Portfolio",
-	"category": "Code 301",
-	"projectUrl": "https://portfolio-peter-301d4.herokuapp.com/",
-	"publishedOn": "2016-05-26",
-	"featureImage": "http://placehold.it/448x300",
-	"body": "<p>You're looking at it! During the entire Code 301 class, we built a portfolio project in tandem with our class projects - daily functionality extension and code refactor. It's a single-page app, deployed to Heroku, using Node, Page, jQuery, Ajax, Icomoon, HTML5 and CSS3. This portfolio is also built with SASS for the stylesheets and proper MVC architecture. Source code is available <a href=\"https://github.com/PeterBreen/301-portfolio\">on Github</a>. And special thanks to placehold.it ;)</p>"
+		"body": "<p>Based on a design and redlines provided by SML, I developed a new homepage/landing page for their Shopify ecommerce website. Responsive design, HTML5 video, written in Liquid and SASS.</p>"
 }, {
 	"title": "Welcome to Seattle",
 	"category": "Code 201",
