@@ -1,12 +1,12 @@
 {
-  "name": "mvc-blog",
+  "name": "Portfolio-website",
   "version": "1.0.0",
-  "description": "As we now complete our MVC conversation, we can refactor our app to use good MVC separation of concerns.",
+  "description": "Personal portfolio website for Peter Breen",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Code Fellows",
+  "author": "Peter Breen (originally based on Code Fellows work)",
   "license": "ISC",
   "dependencies": {
     "express": "^4.13.3",
