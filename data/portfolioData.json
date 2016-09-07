@@ -1,17 +1,17 @@
 [{
-		"title": "Pronto Bike Map",
-		"category": "Code 301",
-		"projectUrl": "https://bike-map-fd305.firebaseapp.com/",
-		"publishedOn": "2016-06-03",
-		"featureImage": "http://placehold.it/448x300",
-		"body": "<p>This app uses the Pronto API to power a Google Map showing realtime bike availability per station and allowing a user to get directions to the nearest bike station. A backend Heroku app grabs the API's JSON data every 5 minutes and feeds it into a Firebase database for our stats page, showing historical availability statistics for each station in the system.</p>"
+	"title": "Pronto Bike Map",
+	"category": "Code 301",
+	"projectUrl": "https://bike-map-fd305.firebaseapp.com/",
+	"publishedOn": "2016-06-03",
+	"featureImage": "http://placehold.it/448x300",
+	"body": "<p>This app uses the Pronto API to power a Google Map showing realtime bike availability per station and allowing a user to get directions to the nearest bike station. A backend Heroku app grabs the API's JSON data every 5 minutes and feeds it into a Firebase database for our stats page, showing historical availability statistics for each station in the system.</p>"
 }, {
-		"title": "Design by SML",
-		"category": "Freelance",
-		"projectUrl": "https://designbysml.com",
-		"publishedOn": "2016-06-01",
-		"featureImage": "http://placehold.it/448x300",
-		"body": "<p>Based on a design and redlines provided by SML, I developed a new homepage/landing page for their Shopify ecommerce website. Responsive design, HTML5 video, written in Liquid and SASS.</p>"
+	"title": "Design by SML",
+	"category": "Freelance",
+	"projectUrl": "https://designbysml.com",
+	"publishedOn": "2016-06-01",
+	"featureImage": "http://placehold.it/448x300",
+	"body": "<p>Based on a design and redlines provided by SML, I developed a new homepage/landing page for their Shopify ecommerce website. Responsive design, HTML5 video, written in Liquid and SASS.</p>"
 }, {
 	"title": "Welcome to Seattle",
 	"category": "Code 201",
