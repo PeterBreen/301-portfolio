@@ -4,7 +4,7 @@
 	"projectUrl": "https://bike-map-fd305.firebaseapp.com/",
 	"publishedOn": "2016-06-03",
 	"featureImage": "http://placehold.it/448x300",
-	"shortDescription": "<p>Short description for Pronto.</p>",
+	"shortDescription": "<p>Uses the Pronto API to power a Google Map displaying nearest station directions, realtime bike availability and historical statistics for the Pronto Bike system in Seattle.</p>",
 	"body": "<p>This app uses the Pronto API to power a Google Map showing realtime bike availability per station and allowing a user to get directions to the nearest bike station. A backend Heroku app grabs the API's JSON data every 5 minutes and feeds it into a Firebase database for our stats page, showing historical availability statistics for each station in the system.</p>"
 }, {
 	"title": "Design by SML",
@@ -12,7 +12,7 @@
 	"projectUrl": "https://designbysml.com",
 	"publishedOn": "2016-06-01",
 	"featureImage": "http://placehold.it/448x300",
-	"shortDescription": "<p>Short description for SML.</p>",
+	"shortDescription": "<p>Shopify site redesign for Design by SML, a local small business.</p>",
 	"body": "<p>Based on a design and redlines provided by SML, I developed a new homepage/landing page for their Shopify ecommerce website. Responsive design, HTML5 video, written in Liquid and SASS.</p>"
 }, {
 	"title": "Welcome to Seattle",
@@ -20,7 +20,7 @@
 	"projectUrl": "http://peterbreen.github.io/welcome-to-seattle/",
 	"publishedOn": "2016-04-07",
 	"featureImage": "http://placehold.it/448x300",
-	"shortDescription": "<p>Short description for Welcome to Seattle.</p>",
+	"shortDescription": "<p>Neighborhood finder app for a prospective or new Seattle resident.</p>",
 	"body": "<p>Welcome To Seattle is my final project from Code Fellows Code 201 class. The concept behind this application was an app where the user could answer a few questions about themselves and their preferences and be given a ranked list of neighborhoods in Seattle based on those preferences to find a neighborhood for them to move to.</p>"
 }, {
 	"title": "Bus Mall",
