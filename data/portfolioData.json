@@ -6,7 +6,7 @@
 	"featureImage": "http://placehold.it/448x300",
 	"shortDescription": "<p>Find the nearest Pronto bike station, see availability statistics for every station, or historical weekly availability data - both systemwide and per station.</p>",
 	"body": "<p>This app uses the Pronto API to power a Google Map showing realtime bike availability per station and allowing a user to get directions to the nearest bike station. A backend Heroku app grabs the API's JSON data every 5 minutes and feeds it into a Firebase database for our stats page, showing historical availability statistics for each station in the system.</p>",
-	"links": [{ "url": "https://bike-map-fd305.firebaseapp.com/", "title": "Pronto Bike Map" },{ "url": "https://github.com/PeterBreen/bike-map", "title": "Code Repository" }],
+	"links": [{ "url": "https://bike-map-fd305.firebaseapp.com/", "title": "Pronto Bike Map" },{ "url": "https://github.com/PeterBreen/bike-map", "title": "Code Repository" }]
 }, {
 	"title": "Design by SML",
 	"category": "Freelance",
