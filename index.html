@@ -16,7 +16,13 @@
        </header>
        <section class="article-body">{{{shortDescription}}}</section>
        <div class="linebreak"></div>
-     </article>
+     <!-- </article> -->
+    </script>
+    <script id="author-filter-template" type="text/x-handlebars-template">
+      <option value="{{author}}">{{author}}</option>
+    </script>
+    <script id="category-filter-template" type="text/x-handlebars-template">
+      <option value="{{category}}">{{category}}</option>
     </script>
     <script id="project-render-detail" type="text/x-handlebars-template">
       <article data-category='{{category}}'>
@@ -28,14 +34,8 @@
         <section class="project-links">
           {{#list links}}
           <a href="{{url}}">{{title}}</a>
-          {{/list}}    
+          {{/list}}
       </article>
-    </script>
-    <script id="author-filter-template" type="text/x-handlebars-template">
-      <option value="{{author}}">{{author}}</option>
-    </script>
-    <script id="category-filter-template" type="text/x-handlebars-template">
-      <option value="{{category}}">{{category}}</option>
     </script>
     <title>Peter Breen</title>
   </head>
@@ -102,6 +102,7 @@
     <script src="/scripts/models/portfolio.js"></script>
     <script src="/scripts/models/repo.js"></script>
     <script src="/scripts/views/portfolioView.js"></script>
+    <script src="/scripts/views/portfolioDetailView.js"></script>
     <script src="/scripts/views/repoView.js"></script>
     <script src="/scripts/controllers/blogController.js"></script>
     <script src="/scripts/controllers/contactController.js"></script>
