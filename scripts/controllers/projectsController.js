@@ -6,5 +6,12 @@
     $('section').hide();
     $('#projects').show();
   };
+  projectsController.detail = function(projectUrl) {
+    Project.fetchAll();
+    $('article').remove();
+    $('section').hide();
+    $('#projects').hide();
+    $('#' + projectUrl).show();
+  };
   module.projectsController = projectsController;
 })(window);
