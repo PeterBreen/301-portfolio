@@ -16,7 +16,7 @@
        </header>
        <section class="article-body">{{{shortDescription}}}</section>
        <div class="linebreak"></div>
-     <!-- </article> -->
+     </article>
     </script>
     <script id="author-filter-template" type="text/x-handlebars-template">
       <option value="{{author}}">{{author}}</option>
@@ -25,7 +25,7 @@
       <option value="{{category}}">{{category}}</option>
     </script>
     <script id="project-render-detail" type="text/x-handlebars-template">
-      <article data-category='{{category}}'>
+      <article data-category='{{category}}' id='{{projectUrl}}'>
         <h3>{{title}}</h3>
         <div class="byline">
            published <time pubdate datetime="2000-01-01">{{publishedOn}}</time>, {{publishStatus}}.
@@ -67,6 +67,7 @@
             <option value="">- All Categories -</option>
           </select>
           <div id="project-render"></div>
+          <div id="project-render-detail"></div>
        </section>
        <section id="contact" class="tab-content">
          <h2>Contact</h2>
