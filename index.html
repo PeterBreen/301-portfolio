@@ -25,16 +25,19 @@
       <option value="{{category}}">{{category}}</option>
     </script>
     <script id="project-render-detail" type="text/x-handlebars-template">
-      <article data-category='{{category}}' id='{{projectUrl}}'>
+      <article data-category='{{category}}' id='{{projectUrl}}' class="detail">
         <h3>{{title}}</h3>
         <div class="byline">
            published <time pubdate datetime="2000-01-01">{{publishedOn}}</time>, {{publishStatus}}.
         </div>
         <section class="article-body">{{body}}</section>
         <section class="project-links">
-          {{#list links}}
+          {{#with links}}
+          {{#list}}
           <a href="{{url}}">{{title}}</a>
           {{/list}}
+          {{/with}}
+        </section>
       </article>
     </script>
     <title>Peter Breen</title>

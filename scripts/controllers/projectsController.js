@@ -7,10 +7,9 @@
     $('#projects').show();
   };
   projectsController.detail = function(projectUrl) {
-    Project.fetchAll();
     $('article').remove();
     $('section').hide();
-    $('#projects').hide();
+    $('#projects-detail').show();
     $('#' + projectUrl).show();
   };
   module.projectsController = projectsController;

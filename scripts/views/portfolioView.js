@@ -39,6 +39,7 @@
         $('#category-filter').append(a.toHtml($('#category-filter-template')));
       };
       $('#projects').append(a.toHtml($('#project-render')));
+      $('#projects').append(a.toHtml($('#project-render-detail')));
     });
     portfolioView.populateCatFilter();
     portfolioView.handleCatFilter();
