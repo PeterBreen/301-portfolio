@@ -6,7 +6,7 @@
     <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700|Roboto+Slab' rel='stylesheet' type='text/css'>
     <link href="/styles/style.css" type="text/css" rel="stylesheet">
     <script id="project-render" type="text/x-handlebars-template">
-      <article data-category='{{category}}'>
+      <article data-category='{{category}}' class='portfolio-items'>
        <header>
          <h3><a href="{{projectUrl}}">{{title}}</a></h3>
          <a href="{{projectUrl}}"><img src="{{featureImage}}" alt="{{title}} project"></a>
@@ -63,7 +63,10 @@
             <option value="">- All Categories -</option>
           </select>
           <div id="project-render"></div>
-          <div id="project-render-detail"></div>
+       </section>
+       <section id="projects-detail">
+         <div id="project-render-detail"></div>
+
        </section>
        <section id="contact" class="tab-content">
          <h2>Contact</h2>
