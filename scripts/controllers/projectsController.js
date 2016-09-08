@@ -6,11 +6,10 @@
     $('section').hide();
     $('#projects').show();
   };
-  projectsController.detail = function(projectUrl) {
+  projectsController.detail = function(ctx) {
     $('article').remove();
     $('section').hide();
-    $('#projects-detail').show();
-    $('#' + projectUrl).show();
+    $('#' + ctx.params.projectUrl).show();
   };
   module.projectsController = projectsController;
 })(window);
