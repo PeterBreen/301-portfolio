@@ -1,10 +1,8 @@
-//Helper function for variable-length lists
+//Helper function for variable-length lists, used in details page
 Handlebars.registerHelper('list', function(context, options) {
-  var ret = "<ul>";
-
+  var ret = '<ul>';
   for(var i=0, j=context.length; i<j; i++) {
-    ret = ret + "<li>" + options.fn(context[i]) + "</li>";
+    ret = ret + '<li>' + options.fn(context[i]) + '</li>';
   }
-
-  return ret + "</ul>";
+  return ret + '</ul>';
 });

@@ -23,6 +23,15 @@
     });
   };
 
+  portfolioView.selectPage = function() {
+  //data is loaded, now check what route got you here, display appropriately?
+    if (true === true) {
+      portfolioView.initIndexPage();
+    } else {
+      portfolioView.initDetailPage(ctx);
+    }
+  };
+  
   portfolioView.initIndexPage = function() {
     Project.all.forEach(function(a){
       if($('#category-filter option:contains("'+ a.category + '")').length === 0) {
@@ -32,11 +41,10 @@
     });
     portfolioView.populateCatFilter();
     portfolioView.handleCatFilter();
-    portfolioView.displayDetails = function() {
-      Project.all(function(a){
-        $('#projects').append(a.toHtml($('#project-render-detail')));
-      });
-    };
+  };
+
+  portfolioView.initDetailPage = function() {
+    console.log('initDetailPage function executed');
   };
   module.portfolioView = portfolioView;
 })(window);

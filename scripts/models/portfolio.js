@@ -35,6 +35,7 @@
         localStorage.eTag = eTag;
         Project.loadAll(data);
         localStorage.portfolioData = JSON.stringify(data);
+        //data is correctly loaded here, route to appropriate result
         portfolioView.initIndexPage();
       }
     });
@@ -49,6 +50,7 @@
         if (currentTag === localStorage.eTag && localStorage.portfolioData) {
           parsedLocal = JSON.parse(localStorage.portfolioData);
           Project.loadAll(parsedLocal);
+          //data is loaded here, route to appropriate result
           portfolioView.initIndexPage();
         } else {
           renderFromJSON();

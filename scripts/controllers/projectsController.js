@@ -7,10 +7,10 @@
     $('#projects').show();
   };
   projectsController.detail = function(ctx) {
-    $('article .portfolio-items').remove();
+    $('article').remove();
     $('section').hide();
     $('#projects-detail').show();
-    $('#' + ctx.params.projectUrl).show();
+    $('#' + ctx.params.routeUrl).show();
   };
   module.projectsController = projectsController;
 })(window);
