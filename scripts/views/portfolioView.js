@@ -24,14 +24,14 @@
   };
 
   portfolioView.selectPage = function() {
-  //data is loaded, now check what route got you here, display appropriately?
+  //every time this function is invoked, JSON data is loaded
     if (true === true) {
       portfolioView.initIndexPage();
     } else {
       portfolioView.initDetailPage(ctx);
     }
   };
-  
+
   portfolioView.initIndexPage = function() {
     Project.all.forEach(function(a){
       if($('#category-filter option:contains("'+ a.category + '")').length === 0) {
