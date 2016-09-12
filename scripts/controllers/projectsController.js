@@ -7,7 +7,7 @@
     $('#projects').show();
   };
   projectsController.detail = function(ctx) {
-    Project.fetchAll();
+    Project.fetchAll(); // #40 - this needs to complete before moving on in the route chain
     $('article').remove();
     $('section').hide();
     $('#project-detail').show();
