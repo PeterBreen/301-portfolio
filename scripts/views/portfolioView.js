@@ -28,7 +28,7 @@
     if (true === true) {
       portfolioView.initIndexPage();
     } else {
-      portfolioView.initDetailPage(ctx);
+      portfolioView.initDetailPage();
     }
   };
 
@@ -44,7 +44,9 @@
   };
 
   portfolioView.initDetailPage = function() {
-    console.log('initDetailPage function executed');
+    Project.all.forEach(function(a){
+      $('#project-detail').append(a.toHtml($('#project-render-detail')));
+    });
   };
   module.portfolioView = portfolioView;
 })(window);
