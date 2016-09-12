@@ -24,7 +24,6 @@
   };
 
   portfolioView.selectPage = function() {
-  //select appropriate page here (context function)
     if (window.location.pathname === '/projects') {
       portfolioView.initIndexPage();
     } else {
