@@ -10,13 +10,9 @@
     Project.fetchAll(); //function call which needs to generate project HTML via Handlebars
     $('article').remove();
     $('section').hide();
-    $('#projects').hide(); // do not use .empty unless you rebuild the category selector every time
-    console.log('projectsController.detail route has completed');
-  };
-
-  projectsController.setProject = function(ctx, next) {
-    var projectName = ctx.params.projectname;
-    next();
+    $('#project-detail').show();
+    $('#project-detail').children().hide(); //hides other projects
+    $('#' + ctx.params.projectname).show(); // shows only the project selected
   };
   module.projectsController = projectsController;
 })(window);
