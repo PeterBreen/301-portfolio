@@ -7,7 +7,7 @@
     $('#projects').show();
   };
   projectsController.detail = function(ctx) {
-    Project.fetchAll(); //function call which needs to generate project HTML via Handlebars
+    Project.fetchAll();
     $('article').remove();
     $('section').hide();
     $('#project-detail').show();
