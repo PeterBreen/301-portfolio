@@ -24,7 +24,7 @@
   };
 
   portfolioView.selectPage = function() {
-  //every time this function is invoked, JSON data is loaded
+  //select appropriate page here
     if (true === true) {
       portfolioView.initIndexPage();
     } else {

@@ -35,7 +35,7 @@
         localStorage.eTag = eTag;
         Project.loadAll(data);
         localStorage.portfolioData = JSON.stringify(data);
-        //now select what to display after loading data
+        //now that JSON is loaded, select what to display after loading data
         portfolioView.selectPage();
       }
     });
@@ -50,7 +50,7 @@
         if (currentTag === localStorage.eTag && localStorage.portfolioData) {
           parsedLocal = JSON.parse(localStorage.portfolioData);
           Project.loadAll(parsedLocal);
-          //now select what to display after loading data
+          //if LocalStorage exists, now select what to display after loading data
           portfolioView.selectPage();
         } else {
           renderFromJSON();
@@ -58,14 +58,5 @@
       }
     });
   };
-
-  // Project.numWordsAll = function() {
-  //   return Project.all.map(function(project) {
-  //     return project.body.match(/\b\w+/g).length;
-  //   })
-  //   .reduce(function(a, b) {
-  //     return a + b;
-  //   });
-  // };
   module.Project = Project;
 })(window);
