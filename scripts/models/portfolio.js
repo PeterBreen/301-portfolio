@@ -29,7 +29,7 @@
   var renderFromJSON = function() {
     $.getJSON({
       type: 'GET',
-      url: 'data/portfolioData.json',
+      url: '/data/portfolioData.json',
       success: function (data, message, xhr) {
         var eTag = xhr.getResponseHeader('eTag');
         localStorage.eTag = eTag;
@@ -44,7 +44,7 @@
   Project.fetchAll = function() {
     $.ajax({
       type: 'HEAD',
-      url: 'data/portfolioData.json',
+      url: '/data/portfolioData.json',
       success: function (data, message, xhr) {
         var currentTag = xhr.getResponseHeader('eTag');
         if (currentTag === localStorage.eTag && localStorage.portfolioData) {
