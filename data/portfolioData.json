@@ -1,7 +1,7 @@
 [{
 	"title": "Pronto Bike Map",
 	"category": "Code 301",
-	"projectUrl": "/projects/bike-map",
+	"projectUrl": "bike-map",
 	"publishedOn": "2016-06-03",
 	"featureImage": "http://placehold.it/448x300",
 	"shortDescription": "<p>Find the nearest Pronto bike station, see availability statistics for every station, or historical weekly availability data - both systemwide and per station.</p>",
