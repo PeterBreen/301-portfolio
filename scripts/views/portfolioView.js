@@ -22,16 +22,14 @@
       }
     });
   };
-  // uncomment this and the function call below to enable "read more" functionality
 
-  // portfolioView.setTeasers = function() {
-  //   $('.article-body *:nth-of-type(n+2)').hide();
-  //   $('#articles').on('click', 'a.read-on', function(e) {
-  //     e.preventDefault();
-  //     $(this).parent().find('*').fadeIn();
-  //     $(this).hide();
-  //   });
-  // };
+  portfolioView.selectPage = function() {
+    if (window.location.pathname === '/projects') {
+      portfolioView.initIndexPage();
+    } else {
+      portfolioView.initDetailPage();
+    }
+  };
 
   portfolioView.initIndexPage = function() {
     Project.all.forEach(function(a){
@@ -42,8 +40,12 @@
     });
     portfolioView.populateCatFilter();
     portfolioView.handleCatFilter();
-    //uncomment this and setTeasers above to enable "read more" functionality
-    // portfolioView.setTeasers();
+  };
+
+  portfolioView.initDetailPage = function() {
+    Project.all.forEach(function(a){
+      $('#project-detail').append(a.toHtml($('#project-render-detail')));
+    });
   };
   module.portfolioView = portfolioView;
 })(window);

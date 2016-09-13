@@ -6,22 +6,32 @@
     <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700|Roboto+Slab' rel='stylesheet' type='text/css'>
     <link href="/styles/style.css" type="text/css" rel="stylesheet">
     <script id="project-render" type="text/x-handlebars-template">
-    <article data-category='{{category}}'>
-     <header>
-       <h3><a href="{{projectUrl}}">{{title}}</a></h3>
-       <a href="{{projectUrl}}"><img src="{{featureImage}}" alt="{{title}} project"></a>
+      <article data-category='{{category}}' class='portfolio-items'>
+       <header>
+         <h3><a href="/projects/{{projectUrl}}">{{title}}</a></h3>
+         <a href="{{projectUrl}}"><img src="{{featureImage}}" alt="{{title}} project"></a>
          <div class="byline">
-          published <time pubdate datetime="2000-01-01">{{publishedOn}}</time>, {{publishStatus}}.
-       </div>
-     </header>
-     <section class="article-body">{{{body}}}</section>
-     <div class="linebreak"></div>
+            published <time pubdate datetime="2000-01-01">{{publishedOn}}</time>, {{publishStatus}}.
+         </div>
+       </header>
+       <section class="article-body">{{{shortDescription}}}</section>
+       <div class="linebreak"></div>
+     </article>
     </script>
     <script id="author-filter-template" type="text/x-handlebars-template">
       <option value="{{author}}">{{author}}</option>
     </script>
     <script id="category-filter-template" type="text/x-handlebars-template">
       <option value="{{category}}">{{category}}</option>
+    </script>
+    <script id="project-render-detail" type="text/x-handlebars-template">
+      <article data-category='{{category}}' id='{{projectUrl}}' class="detail">
+        <h3>{{title}}</h3>
+        <div class="byline">
+           published <time pubdate datetime="2000-01-01">{{publishedOn}}</time>, {{publishStatus}}.
+        </div>
+        <section class="detail-body">{{{body}}}</section>
+      </article>
     </script>
     <title>Peter Breen</title>
   </head>
@@ -36,7 +46,6 @@
         </ul>
       </nav>
       <h1>Peter Breen</h1>
-
     </header>
     <main>
       <section id="home" class="tab-content">
@@ -53,6 +62,9 @@
             <option value="">- All Categories -</option>
           </select>
           <div id="project-render"></div>
+       </section>
+       <section id="project-detail">
+         <div id="project-render-detail"></div>
        </section>
        <section id="contact" class="tab-content">
          <h2>Contact</h2>
@@ -88,6 +100,7 @@
     <script src="/scripts/models/portfolio.js"></script>
     <script src="/scripts/models/repo.js"></script>
     <script src="/scripts/views/portfolioView.js"></script>
+    <script src="/scripts/views/portfolioDetailView.js"></script>
     <script src="/scripts/views/repoView.js"></script>
     <script src="/scripts/controllers/blogController.js"></script>
     <script src="/scripts/controllers/contactController.js"></script>

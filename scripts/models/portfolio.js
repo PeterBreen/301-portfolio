@@ -29,13 +29,14 @@
   var renderFromJSON = function() {
     $.getJSON({
       type: 'GET',
-      url: 'data/portfolioData.json',
+      url: '/data/portfolioData.json',
       success: function (data, message, xhr) {
         var eTag = xhr.getResponseHeader('eTag');
         localStorage.eTag = eTag;
         Project.loadAll(data);
         localStorage.portfolioData = JSON.stringify(data);
-        portfolioView.initIndexPage();
+        //now that JSON is loaded, select what to display after loading data
+        portfolioView.selectPage();
       }
     });
   };
@@ -43,27 +44,19 @@
   Project.fetchAll = function() {
     $.ajax({
       type: 'HEAD',
-      url: 'data/portfolioData.json',
+      url: '/data/portfolioData.json',
       success: function (data, message, xhr) {
         var currentTag = xhr.getResponseHeader('eTag');
         if (currentTag === localStorage.eTag && localStorage.portfolioData) {
           parsedLocal = JSON.parse(localStorage.portfolioData);
           Project.loadAll(parsedLocal);
-          portfolioView.initIndexPage();
+          //if LocalStorage exists, now select what to display after loading data
+          portfolioView.selectPage();
         } else {
           renderFromJSON();
         }
       }
     });
   };
-
-  // Project.numWordsAll = function() {
-  //   return Project.all.map(function(project) {
-  //     return project.body.match(/\b\w+/g).length;
-  //   })
-  //   .reduce(function(a, b) {
-  //     return a + b;
-  //   });
-  // };
   module.Project = Project;
 })(window);
