@@ -1,7 +1,10 @@
 (function(module) {
   var projectsController = {};
-  projectsController.index = function() {
+  projectsController.retrieveData = function(ctx, next) {
     Project.fetchAll();
+    next();
+  };
+  projectsController.index = function() {
     $('article').remove();
     $('section').hide();
     $('#projects').show();
