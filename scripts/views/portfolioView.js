@@ -46,6 +46,7 @@
     Project.all.forEach(function(a){
       $('#project-detail').append(a.toHtml($('#project-render-detail')));
     });
+    done: console.log('initDetailPage is done, do stuff');
   };
   module.portfolioView = portfolioView;
 })(window);
