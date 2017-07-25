@@ -1,6 +1,6 @@
 {
   "name": "Portfolio-website",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Personal portfolio website for Peter Breen",
   "main": "server.js",
   "scripts": {
