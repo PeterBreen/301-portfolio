@@ -9,7 +9,7 @@
   "author": "Peter Breen (originally based on Code Fellows work)",
   "license": "ISC",
   "engines": {
-    "node": "8.1.x"
+    "node": "8.1.4"
   },
   "dependencies": {
     "express": "^4.13.3",
