@@ -8,6 +8,9 @@
   },
   "author": "Peter Breen (originally based on Code Fellows work)",
   "license": "ISC",
+  "engines": {
+    "node": "8.1.x"
+  },
   "dependencies": {
     "express": "^4.13.3",
     "express-request-proxy": "^1.0.10"
