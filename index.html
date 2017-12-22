@@ -31,7 +31,12 @@
            published <time pubdate datetime="2000-01-01">{{publishedOn}}</time>, {{publishStatus}}.
         </div>
         <img src="{{featureImage}}" alt="{{title}} project">
-        <section class="detail-body">{{{body}}} {{{list links}}}</section>
+        <section class="detail-body">
+          {{{body}}}
+          {{#list links}}
+              <a href="{{url}}">{{title}}</a>
+          {{/list}}
+        </section>
       </article>
     </script>
     <title>Peter Breen</title>
