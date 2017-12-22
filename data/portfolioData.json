@@ -1,6 +1,6 @@
 [{
 	"title": "Pronto Bike Map",
-	"category": "Code 301",
+	"category": "Code Fellows",
 	"projectUrl": "bike-map",
 	"publishedOn": "2016-06-03",
 	"featureImage": "/img/pronto-448.jpg",
@@ -14,10 +14,10 @@
 	"publishedOn": "2016-06-01",
 	"featureImage": "/img/sml-448.jpg",
 	"shortDescription": "<p>Shopify site redesign for Design by SML, a local small business.</p>",
-	"body": "<p>Based on a design and redlines provided by SML, I developed a new homepage/landing page for their Shopify ecommerce website. Responsive design, HTML5 video, written in Liquid and SASS.</p>"
+	"body": "<p>Based on a design and redlines provided by SML, I developed a new homepage/landing page for their Shopify ecommerce website as well as building a template for future updates from the owners. Responsive design, HTML5 video, written in Liquid and SASS.</p>"
 }, {
 	"title": "Welcome to Seattle",
-	"category": "Code 201",
+	"category": "Code Fellows",
 	"projectUrl": "http://peterbreen.github.io/welcome-to-seattle/",
 	"publishedOn": "2016-04-07",
 	"featureImage": "/img/wts-448.jpg",
@@ -25,7 +25,7 @@
 	"body": "<p>Welcome To Seattle is my final project from Code Fellows Code 201 class. The concept behind this application was an app where the user could answer a few questions about themselves and their preferences and be given a ranked list of neighborhoods in Seattle based on those preferences to find a neighborhood for them to move to.</p>"
 }, {
 	"title": "Bus Mall",
-	"category": "Code 201",
+	"category": "Code Fellows",
 	"projectUrl": "http://peterbreen.github.io/bus-mall/",
 	"publishedOn": "2016-04-01",
 	"featureImage": "http://placehold.it/448x300",
@@ -33,7 +33,7 @@
 	"body": "<p>Bus Mall is my third major project from Code Fellows Code 201. Bus Mall is meant to emulate a SkyMall-esque service except for the lengthy mass transit commutes in the Puget Sound area. To maximize return on the future Bus Mall catalog, this site allows for user testing - users choose the best of 3 randomly selected products a certain number of times and at the end get to see a Chart.js bar chart showing total lifetime selections for all products - basically a visual representation of which products are most popular from all testers (via localStorage).</p>"
 }, {
 	"title": "Pizza 3001",
-	"category": "Code 201",
+	"category": "Code Fellows",
 	"projectUrl": "http://peterbreen.github.io/pizza-odyssey/index.html",
 	"publishedOn": "2016-03-26",
 	"featureImage": "http://placehold.it/448x300",
@@ -47,4 +47,13 @@
 	"featureImage": "/img/cider-448.jpg",
 	"shortDescription": "<p>Personal project to track and rate ciders we've tried before to assist in selecting one for purchase.</p>",
 	"body": "<p>Cider Selector is a personal project my partner and I made to answer the question of what cider to buy if we were out at a bar - using a searchable data set of cider brand, variety, a score from 1-3, and some tasting notes. If we wonder if we have tried a particular cider before we can quickly search for it on this site and return relevant results. Responsive design first as the primary use is envisioned to be on a phone. Originally written in 2015, refactored in 2016.</p>"
-}]
+}, {
+	"title": "Reactfish",
+	"category": "Personal",
+	"projectUrl": "https://peterbreen.github.io/reactfish/",
+	"publishedOn": "2017-05-19",
+	"featureImage": "http://placehold.it/448x300",
+	"shortDescription": "<p>A virtual fishtank, built in React with ES2015 syntax.</p>",
+	"body": "<p>Reactfish was a learning project for React; built on Create React App's scaffolding, it has three fish (Dopefish, from Commander Keen IV) swim around the screen and react to being clicked.</p>"
+}
+]
