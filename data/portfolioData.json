@@ -10,19 +10,21 @@
 }, {
 	"title": "Design by SML",
 	"category": "Freelance",
-	"projectUrl": "https://designbysml.com",
+	"projectUrl": "designbysml",
 	"publishedOn": "2016-06-01",
 	"featureImage": "/img/sml-448.jpg",
 	"shortDescription": "<p>Shopify site redesign for Design by SML, a local small business.</p>",
-	"body": "<p>Based on a design and redlines provided by SML, I developed a new homepage/landing page for their Shopify ecommerce website as well as building a template for future updates from the owners. Responsive design, HTML5 video, written in Liquid and SASS.</p>"
+	"body": "<p>Based on a design and redlines provided by SML, I developed a new homepage/landing page for their Shopify ecommerce website as well as building a template for future updates from the owners. Responsive design, HTML5 video, written in Liquid and SASS.</p>",
+	"links": [{ "url": "https://designbysml.com", "title": "Design By SML" }]
 }, {
 	"title": "Welcome to Seattle",
 	"category": "Code Fellows",
-	"projectUrl": "http://peterbreen.github.io/welcome-to-seattle/",
+	"projectUrl": "welcometoseattle",
 	"publishedOn": "2016-04-07",
 	"featureImage": "/img/wts-448.jpg",
 	"shortDescription": "<p>Neighborhood finder app for a prospective or new Seattle resident.</p>",
-	"body": "<p>Welcome To Seattle is my final project from Code Fellows Code 201 class. The concept behind this application was an app where the user could answer a few questions about themselves and their preferences and be given a ranked list of neighborhoods in Seattle based on those preferences to find a neighborhood for them to move to.</p>"
+	"body": "<p>Welcome To Seattle is my final project from Code Fellows Code 201 class. The concept behind this application was an app where the user could answer a few questions about themselves and their preferences and be given a ranked list of neighborhoods in Seattle based on those preferences to find a neighborhood for them to move to.</p>",
+	"links": [{ "url": "http://peterbreen.github.io/welcome-to-seattle/", "title": "Welcome to Seattle"} , { "url": "https://github.com/PeterBreen/welcome-to-seattle", "title": "Code Repository" }]
 }, {
 	"title": "Bus Mall",
 	"category": "Code Fellows",
