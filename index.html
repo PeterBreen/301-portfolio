@@ -8,13 +8,13 @@
     <script id="project-render" type="text/x-handlebars-template">
       <article data-category='{{category}}' class='portfolio-items'>
        <header>
-         <h3><a href="/projects/{{projectUrl}}">{{title}}</a></h3>
-         <a href="{{projectUrl}}"><img src="{{featureImage}}" alt="{{title}} project"></a>
+         <h3>{{title}}</h3>
+         <a href="/projects/{{projectUrl}}"><img src="{{featureImage}}" alt="{{title}} project"></a>
          <div class="byline">
             published <time pubdate datetime="2000-01-01">{{publishedOn}}</time>, {{publishStatus}}.
          </div>
        </header>
-       <section class="article-body">{{{shortDescription}}}</section>
+       <section class="article-body">{{{shortDescription}}} <p><a href="/projects/{{projectUrl}}">Read more -></p></section>
        <div class="linebreak"></div>
      </article>
     </script>
@@ -30,7 +30,13 @@
         <div class="byline">
            published <time pubdate datetime="2000-01-01">{{publishedOn}}</time>, {{publishStatus}}.
         </div>
-        <section class="detail-body">{{{body}}}</section>
+        <img src="{{featureImage}}" alt="{{title}} project">
+        <section class="detail-body">
+          {{{body}}}
+          {{#list links}}
+              <a href="{{url}}">{{title}}</a>
+          {{/list}}
+        </section>
       </article>
     </script>
     <title>Peter Breen</title>
@@ -82,7 +88,7 @@
        <section id="blog" class="tab-content">
          <h2>Blog</h2>
          <p>This is going to be a blog eventually. There's a <a href="https://github.com/PeterBreen/301-portfolio/issues/24">Github issue</a> for it and everything.</p>
-         <p><a href="http://peterbreen.info/wp">I'm replacing this Wordpress blog</a>.</p>
+         <p><a href="http://peterbreen.info/wp">Here is my current Wordpress blog</a>.</p>
        </section>
       </main>
       <footer>
