@@ -1,7 +1,7 @@
 [{
 	"title": "Pronto Bike Map",
 	"category": "Code Fellows",
-	"projectUrl": "bike-map",
+	"projectUrl": "bikemap",
 	"publishedOn": "2016-06-03",
 	"featureImage": "/img/pronto-448.jpg",
 	"shortDescription": "<p>Find the nearest Pronto bike station, see availability statistics for every station, or historical weekly availability data - both systemwide and per station.</p>",
@@ -37,16 +37,16 @@
 }, {
 	"title": "Pizza 3001",
 	"category": "Code Fellows",
-	"projectUrl": "http://peterbreen.github.io/pizza-odyssey/index.html",
+	"projectUrl": "pizza3001",
 	"publishedOn": "2016-03-26",
 	"featureImage": "http://placehold.it/448x300",
 	"shortDescription": "<p>A mock pizza store's website, including a public facing front-end and a scheduling/staffing backend based on data input.</p>",
 	"body": "<p>Do you want pizza? Do you want pizza from the FUTURE? Pizza 3001 is here for you. It consists of the main index page and a <a href=\"http://peterbreen.github.io/pizza-odyssey/sales-data.html\">intranet sales data</a> page where the proprietor can track pizzas sold per branch and per timeslot so they know when to hire drivers and how many to hire at any given time. It also makes bad nerd jokes that Benton probably appreciated. Probably.</p>",
-	"links": [{"url": "", "title": "" }, {"url": "", "title": "Code Repository"}]
+	"links": [{"url": "http://peterbreen.github.io/pizza-odyssey/index.html", "title": "Pizza 3001" }, {"url": "https://github.com/PeterBreen/pizza-odyssey", "title": "Code Repository"}]
 }, {
 	"title": "Cider Tasting",
 	"category": "Personal",
-	"projectUrl": "",
+	"projectUrl": "cidertasting",
 	"publishedOn": "2017-09-17",
 	"featureImage": "/img/cider-448.jpg",
 	"shortDescription": "<p>Personal project to track and rate ciders we've tried before to assist in selecting one for purchase.</p>",
