@@ -9,7 +9,7 @@
       <article data-category='{{category}}' class='portfolio-items'>
        <header>
          <h3>{{title}}</h3>
-         <a href="{{projectUrl}}"><img src="{{featureImage}}" alt="{{title}} project"></a>
+         <a href="/projects/{{projectUrl}}"><img src="{{featureImage}}" alt="{{title}} project"></a>
          <div class="byline">
             published <time pubdate datetime="2000-01-01">{{publishedOn}}</time>, {{publishStatus}}.
          </div>
@@ -30,7 +30,9 @@
         <div class="byline">
            published <time pubdate datetime="2000-01-01">{{publishedOn}}</time>, {{publishStatus}}.
         </div>
+        <img src="{{featureImage}}" alt="{{title}} project">
         <section class="detail-body">{{{body}}}</section>
+      
       </article>
     </script>
     <title>Peter Breen</title>
