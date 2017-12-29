@@ -7,6 +7,9 @@ section h2, select {
 .article-body:last-of-type {
   padding-bottom: 2rem;
 }
+.detail-list ul {
+  margin-left: 2rem;
+}
 
 @media screen and (min-width: 48rem) {
   article {
