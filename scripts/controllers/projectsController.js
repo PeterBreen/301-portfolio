@@ -13,8 +13,6 @@
     $('article').remove();
     $('section').hide();
     $('#project-detail').show();
-    $('#project-detail').children().hide(); //hides other projects
-    $('#' + ctx.params.projectname).show(); // shows only the project selected
   };
   module.projectsController = projectsController;
 })(window);
