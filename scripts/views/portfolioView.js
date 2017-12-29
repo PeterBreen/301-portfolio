@@ -44,7 +44,11 @@
 
   portfolioView.initDetailPage = function() {
     Project.all.forEach(function(a){
-      $('#project-detail').append(a.toHtml($('#project-render-detail')));
+      var match = '/projects/' + a.projectUrl;
+      var strMatch = match.toString();
+      if (strMatch === window.location.pathname) {
+        $('#project-detail').append(a.toHtml($('#project-render-detail')));
+      }
     });
   };
   module.portfolioView = portfolioView;
