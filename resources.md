@@ -1,4 +1,4 @@
-#Resources Used
+# Resources Used
 
  - Adobe Color: https://color.adobe.com/Bloggy-Gradient-Blues-color-theme-66891/  
  - jQuery http://jquery.com/
