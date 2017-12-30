@@ -193,17 +193,17 @@ section h2, select {
   margin-left: 2rem; }
 
 @media screen and (min-width: 48rem) {
-  article {
+  .portfolio-items {
     max-width: calc(50% - 1rem);
     padding-right: 1rem;
     display: block;
     float: left; }
 
-  article:nth-of-type(even) {
+  .portfolio-items:nth-of-type(even) {
     padding-right: 0;
     padding-left: 1rem; }
 
-  article:nth-of-type(odd) {
+  .portfolio-items:nth-of-type(odd) {
     clear: left; } }
 .active a {
   color: #e1e6fa; }

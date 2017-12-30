@@ -22,15 +22,6 @@ handlebars.min.js
 /styles/.sass-cache
 .eslintrc
 
-
-# old CSS files #
-#################
-base.css
-layout.css
-modules.css
-states.css
-
 # SASS partials #
 ################
-*.scss
 *.map
