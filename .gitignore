@@ -24,5 +24,4 @@ handlebars.min.js
 
 # SASS partials #
 ################
-*.scss
 *.map
