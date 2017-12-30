@@ -61,5 +61,14 @@
 	"shortDescription": "<p>A virtual fishtank, built in React with ES2015 syntax.</p>",
 	"body": "<p>Reactfish was a learning project for React; built on Create React App's scaffolding, it has three fish (Dopefish, from Commander Keen IV) swim around the screen and react to being clicked.</p>",
 	"links": [{"url": "https://peterbreen.github.io/reactfish/", "title": "Reactfish" }, {"url": "https://github.com/PeterBreen/reactfish", "title": "Code Repository"}]
+}, {
+	"title": "Contracting Requirements",
+	"category": "Professional",
+	"projectUrl": "mrsccontracting",
+	"publishedOn": "2015-07-20",
+	"featureImage": "/img/mrsc-448.png",
+	"shortDescription": "<p>Custom template for a contracting tool, built outside the site CMS.</p>",
+	"body": "<p>This contracting requiremenst tool was a project developed outside our CMS, but still needed to conform to the site style and not add significant upkeep overhead - and quickly. I needed to develop static templates and custom JavaScript and CSS that matched the CMS templates and also reused as many of the CMS includes as possible so that, for example, updates to the site navigation would be represented here automatically as well.</p>",
+	"links": [{"url": "http://mrsc.org/Home/Research-Tools/Contracting-Requirements.aspx", "title": "Find Your Contracting Requirements" }]
 }
 ]
