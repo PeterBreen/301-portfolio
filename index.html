@@ -14,7 +14,7 @@
             published <time pubdate datetime="2000-01-01">{{publishedOn}}</time>, {{publishStatus}}.
          </div>
        </header>
-       <section class="article-body">{{{shortDescription}}} <p><a href="/projects/{{projectUrl}}">Read more -></p></section>
+       <section class="article-body"><p>{{{shortDescription}}}</p> <p><a href="/projects/{{projectUrl}}">Read more -></p></section>
        <div class="linebreak"></div>
      </article>
     </script>
@@ -32,7 +32,7 @@
         </div>
         <img src="{{featureImage}}" alt="{{title}} project">
         <section class="detail-body">
-          {{{body}}}
+          <p>{{{body}}}</p>
           {{#list links}}
               <a href="{{url}}">{{title}}</a>
           {{/list}}

@@ -4,8 +4,8 @@
 	"projectUrl": "bikemap",
 	"publishedOn": "2016-06-03",
 	"featureImage": "/img/pronto-448.jpg",
-	"shortDescription": "<p>Find the nearest Pronto bike station, see availability statistics for every station, or historical weekly availability data - both systemwide and per station.</p>",
-	"body": "<p>This app uses the Pronto API to power a Google Map showing realtime bike availability per station and allowing a user to get directions to the nearest bike station. A backend Heroku app grabs the API's JSON data every 5 minutes and feeds it into a Firebase database for our stats page, showing historical availability statistics for each station in the system.</p>",
+	"shortDescription": "Find the nearest Pronto bike station, see availability statistics for every station, or historical weekly availability data - both systemwide and per station.",
+	"body": "This app uses the Pronto API to power a Google Map showing realtime bike availability per station and allowing a user to get directions to the nearest bike station. A backend Heroku app grabs the API's JSON data every 5 minutes and feeds it into a Firebase database for our stats page, showing historical availability statistics for each station in the system.",
 	"links": [{ "url": "https://bike-map-fd305.firebaseapp.com/", "title": "Pronto Bike Map" },{ "url": "https://github.com/PeterBreen/bike-map", "title": "Code Repository" }]
 }, {
 	"title": "Design by SML",
@@ -13,8 +13,8 @@
 	"projectUrl": "designbysml",
 	"publishedOn": "2016-06-01",
 	"featureImage": "/img/sml-448.jpg",
-	"shortDescription": "<p>Shopify site redesign for Design by SML, a local small business.</p>",
-	"body": "<p>Based on a design and redlines provided by SML, I developed a new homepage/landing page for their Shopify ecommerce website as well as building a template for future updates from the owners. Responsive design, HTML5 video, written in Liquid and SASS.</p>",
+	"shortDescription": "Shopify site redesign for Design by SML, a local small business.",
+	"body": "Based on a design and redlines provided by SML, I developed a new homepage/landing page for their Shopify ecommerce website as well as building a template for future updates from the owners. Responsive design, HTML5 video, written in Liquid and SASS.",
 	"links": [{ "url": "https://designbysml.com", "title": "Design By SML" }]
 }, {
 	"title": "Welcome to Seattle",
@@ -22,8 +22,8 @@
 	"projectUrl": "welcometoseattle",
 	"publishedOn": "2016-04-07",
 	"featureImage": "/img/wts-448.jpg",
-	"shortDescription": "<p>Neighborhood finder app for a prospective or new Seattle resident.</p>",
-	"body": "<p>Welcome To Seattle is my final project from Code Fellows Code 201 class. The concept behind this application was an app where the user could answer a few questions about themselves and their preferences and be given a ranked list of neighborhoods in Seattle based on those preferences to find a neighborhood for them to move to.</p>",
+	"shortDescription": "Neighborhood finder app for a prospective or new Seattle resident.",
+	"body": "Welcome To Seattle is my final project from Code Fellows Code 201 class. The concept behind this application was an app where the user could answer a few questions about themselves and their preferences and be given a ranked list of neighborhoods in Seattle based on those preferences to find a neighborhood for them to move to.",
 	"links": [{ "url": "http://peterbreen.github.io/welcome-to-seattle/", "title": "Welcome to Seattle"} , { "url": "https://github.com/PeterBreen/welcome-to-seattle", "title": "Code Repository" }]
 }, {
 	"title": "Bus Mall",
@@ -31,8 +31,8 @@
 	"projectUrl": "busmall",
 	"publishedOn": "2016-04-01",
 	"featureImage": "/img/busmall-448.png",
-	"shortDescription": "<p>Bus Mall is a mock market research site, using product selection aggregates to find the most popular products to sell.</p>",
-	"body": "<p>Bus Mall is my third major project from Code Fellows Code 201. Bus Mall is meant to emulate a SkyMall-esque service except for the lengthy mass transit commutes in the Puget Sound area. To maximize return on the future Bus Mall catalog, this site allows for user testing - users choose the best of 3 randomly selected products a certain number of times and at the end get to see a Chart.js bar chart showing total lifetime selections for all products - basically a visual representation of which products are most popular from all testers (via localStorage).</p>",
+	"shortDescription": "Bus Mall is a mock market research site, using product selection aggregates to find the most popular products to sell.",
+	"body": "Bus Mall is my third major project from Code Fellows Code 201. Bus Mall is meant to emulate a SkyMall-esque service except for the lengthy mass transit commutes in the Puget Sound area. To maximize return on the future Bus Mall catalog, this site allows for user testing - users choose the best of 3 randomly selected products a certain number of times and at the end get to see a Chart.js bar chart showing total lifetime selections for all products - basically a visual representation of which products are most popular from all testers (via localStorage).",
 	"links": [{ "url": "http://peterbreen.github.io/bus-mall/", "title": "Bus Mall"}, {"url": "https://github.com/PeterBreen/bus-mall", "title": "Code Repository"}]
 }, {
 	"title": "Pizza 3001",
@@ -40,8 +40,8 @@
 	"projectUrl": "pizza3001",
 	"publishedOn": "2016-03-26",
 	"featureImage": "/img/pizza-448.png",
-	"shortDescription": "<p>A mock pizza store's website, including a public facing front-end and a scheduling/staffing backend based on data input.</p>",
-	"body": "<p>Do you want pizza? Do you want pizza from the FUTURE? Pizza 3001 is here for you. It consists of the main index page and a <a href=\"http://peterbreen.github.io/pizza-odyssey/sales-data.html\">intranet sales data</a> page where the proprietor can track pizzas sold per branch and per timeslot so they know when to hire drivers and how many to hire at any given time. It also makes bad nerd jokes that Benton probably appreciated. Probably.</p>",
+	"shortDescription": "A mock pizza store's website, including a public facing front-end and a scheduling/staffing backend based on data input.",
+	"body": "Do you want pizza? Do you want pizza from the FUTURE? Pizza 3001 is here for you. It consists of the main index page and a <a href=\"http://peterbreen.github.io/pizza-odyssey/sales-data.html\">intranet sales data</a> page where the proprietor can track pizzas sold per branch and per timeslot so they know when to hire drivers and how many to hire at any given time. It also makes bad nerd jokes that Benton probably appreciated. Probably.",
 	"links": [{"url": "http://peterbreen.github.io/pizza-odyssey/index.html", "title": "Pizza 3001" }, {"url": "https://github.com/PeterBreen/pizza-odyssey", "title": "Code Repository"}]
 }, {
 	"title": "Cider Tasting",
@@ -49,8 +49,8 @@
 	"projectUrl": "cidertasting",
 	"publishedOn": "2017-09-17",
 	"featureImage": "/img/cider-448.jpg",
-	"shortDescription": "<p>Personal project to track and rate ciders we've tried before to assist in selecting one for purchase.</p>",
-	"body": "<p>Cider Tasting is a personal project my partner and I made to answer the question of what cider to buy if we were out at a bar - using a searchable data set of cider brand, variety, a score from 1-3, and some tasting notes. If we wonder if we have tried a particular cider before we can quickly search for it on this site and return relevant results. Responsive design first as the primary use is envisioned to be on a phone. Originally written in 2015, refactored in 2016 and 2017.</p>",
+	"shortDescription": "Personal project to track and rate ciders we've tried before to assist in selecting one for purchase.",
+	"body": "Cider Tasting is a personal project my partner and I made to answer the question of what cider to buy if we were out at a bar - using a searchable data set of cider brand, variety, a score from 1-3, and some tasting notes. If we wonder if we have tried a particular cider before we can quickly search for it on this site and return relevant results. Responsive design first as the primary use is envisioned to be on a phone. Originally written in 2015, refactored in 2016 and 2017.",
 	"links": [{"url": "http://peterbreen.info/cider/", "title": "Cider Tasting" }, {"url": "https://github.com/PeterBreen/cider-site", "title": "Code Repository"}]
 }, {
 	"title": "Reactfish",
@@ -58,8 +58,8 @@
 	"projectUrl": "reactfish",
 	"publishedOn": "2017-05-19",
 	"featureImage": "/img/reactfish-448.png",
-	"shortDescription": "<p>A virtual fishtank, built in React with ES2015 syntax.</p>",
-	"body": "<p>Reactfish was a learning project for React; built on Create React App's scaffolding, it has three fish (Dopefish, from Commander Keen IV) swim around the screen and react to being clicked.</p>",
+	"shortDescription": "A virtual fishtank, built in React with ES2015 syntax.",
+	"body": "Reactfish was a learning project for React; built on Create React App's scaffolding, it has three fish (Dopefish, from Commander Keen IV) swim around the screen and react to being clicked.",
 	"links": [{"url": "https://peterbreen.github.io/reactfish/", "title": "Reactfish" }, {"url": "https://github.com/PeterBreen/reactfish", "title": "Code Repository"}]
 }, {
 	"title": "Contracting Requirements",
@@ -67,8 +67,8 @@
 	"projectUrl": "mrsccontracting",
 	"publishedOn": "2015-07-20",
 	"featureImage": "/img/mrsc-448.png",
-	"shortDescription": "<p>Custom template for a contracting tool, built outside the site CMS.</p>",
-	"body": "<p>This contracting requiremenst tool was a project developed outside our CMS, but still needed to conform to the site style and not add significant upkeep overhead - and quickly. I needed to develop static templates and custom JavaScript and CSS that matched the CMS templates and also reused as many of the CMS includes as possible so that, for example, updates to the site navigation would be represented here automatically as well.</p>",
+	"shortDescription": "Custom template for a contracting tool, built outside the site CMS.",
+	"body": "This contracting requiremenst tool was a project developed outside our CMS, but still needed to conform to the site style and not add significant upkeep overhead - and quickly. I needed to develop static templates and custom JavaScript and CSS that matched the CMS templates and also reused as many of the CMS includes as possible so that, for example, updates to the site navigation would be represented here automatically as well.",
 	"links": [{"url": "http://mrsc.org/Home/Research-Tools/Contracting-Requirements.aspx", "title": "Find Your Contracting Requirements" }]
 }
 ]
