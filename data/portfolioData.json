@@ -41,7 +41,7 @@
 	"publishedOn": "2017-05-19",
 	"featureImage": "/img/reactfish-448.png",
 	"shortDescription": "An experiment to learn both React and use ES2015 syntax.",
-	"body": "Reactfish was a learning project for React; built on Create React App's scaffolding, it has a variable number of fish (Dopefish, from Commander Keen IV) swim around the screen and react to being clicked. Number of fish is conditionally rendered based on screen size.",
+	"body": "Reactfish was a learning project for React; built on Create React App's scaffolding, it has a variable number of fish (Dopefish, from Commander Keen IV) swim around the screen and react to being clicked. Number of fish is conditionally rendered based on screen size. Uses lodash for debounce handling on click events.",
 	"links": [{"url": "https://peterbreen.github.io/reactfish/", "title": "Reactfish" }, {"url": "https://github.com/PeterBreen/reactfish", "title": "Code Repository"}]
 }, {
 	"title": "Find Your Contracting Requirements",
