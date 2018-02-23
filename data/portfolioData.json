@@ -4,8 +4,7 @@
 	"projectUrl": "bikemap",
 	"publishedOn": "2016-06-03",
 	"featureImage": "/img/pronto-448.jpg",
-	"shortDescription": "
-A class project to show realtime and historical availability information via Google Maps for the Pronto bikeshare network.",
+	"shortDescription": "A class project to show realtime and historical availability information via Google Maps for the Pronto bikeshare network.",
 	"body": "I worked on this with a team of three other students at Code Fellows. My role was leading the development of our mobile-first, responsive UI design and development as well as developing the historical availability charts by connecting to our backend database and displaying with Chart.js. Hosted on Heroku, using Firebase for our database.",
 	"links": [{ "url": "https://bike-map-fd305.firebaseapp.com/", "title": "Pronto Bike Map" },{ "url": "https://github.com/PeterBreen/bike-map", "title": "Code Repository" }]
 }, {
