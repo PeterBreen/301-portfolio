@@ -21,6 +21,7 @@ handlebars.min.js
 /scripts/gittoken.js
 /styles/.sass-cache
 .eslintrc
+oldportfolio.json
 
 # SASS partials #
 ################
