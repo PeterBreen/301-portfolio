@@ -1,5 +1,5 @@
 (function(module) {
-  function Project (opts) {
+  function Project(opts) {
     for (keys in opts) {
       this[keys] = opts[keys];
     }
@@ -9,14 +9,14 @@
 
   Project.prototype.toHtml = function(templateId) {
     var template = Handlebars.compile((templateId).html());
-    this.daysAgo = parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000);
-    this.publishStatus = this.publishedOn ? + this.daysAgo + ' days ago' : '(draft)';
+    this.daysAgo = parseInt((new Date() - new Date(this.publishedOn)) / 60 / 60 / 24 / 1000);
+    this.publishStatus = this.publishedOn ? +this.daysAgo + ' days ago' : '(draft)';
     return template(this);
   };
 
   // Sort data by date published, descending order
   Project.loadAll = function(passedData) {
-    passedData.sort(function(a,b) {
+    passedData.sort(function(a, b) {
       return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
     });
 
@@ -30,7 +30,7 @@
     $.getJSON({
       type: 'GET',
       url: '/data/portfolioData.json',
-      success: function (data, message, xhr) {
+      success: function(data, message, xhr) {
         var eTag = xhr.getResponseHeader('eTag');
         localStorage.eTag = eTag;
         Project.loadAll(data);
@@ -45,7 +45,7 @@
     $.ajax({
       type: 'HEAD',
       url: '/data/portfolioData.json',
-      success: function (data, message, xhr) {
+      success: function(data, message, xhr) {
         var currentTag = xhr.getResponseHeader('eTag');
         if (currentTag === localStorage.eTag && localStorage.portfolioData) {
           parsedLocal = JSON.parse(localStorage.portfolioData);

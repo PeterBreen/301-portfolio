@@ -11,7 +11,7 @@
     });
   };
 
-  portfolioView.handleCatFilter = function () {
+  portfolioView.handleCatFilter = function() {
     $('#category-filter').on('change', function() {
       if ($(this).val()) {
         $('article').hide();
@@ -32,8 +32,8 @@
   };
 
   portfolioView.initIndexPage = function() {
-    Project.all.forEach(function(a){
-      if($('#category-filter option:contains("'+ a.category + '")').length === 0) {
+    Project.all.forEach(function(a) {
+      if ($('#category-filter option:contains("' + a.category + '")').length === 0) {
         $('#category-filter').append(a.toHtml($('#category-filter-template')));
       };
       $('#projects').append(a.toHtml($('#project-render')));
@@ -43,7 +43,7 @@
   };
 
   portfolioView.initDetailPage = function() {
-    Project.all.forEach(function(a){
+    Project.all.forEach(function(a) {
       var match = '/projects/' + a.projectUrl;
       var strMatch = match.toString();
       if (strMatch === window.location.pathname) {

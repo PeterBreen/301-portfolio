@@ -4,7 +4,7 @@
   repos.all = [];
   repos.requestRepos = function(callback) {
     $.get('/github/users/PeterBreen/repos')
-      .done(function(data){
+      .done(function(data) {
         repos.all = data;
       }).done(callback);
   };
@@ -25,9 +25,9 @@
     return arr.map(function(repo) {
       return repo.size;
     })
-    .reduce(function(a, b) {
-      return a + b;
-    });
+      .reduce(function(a, b) {
+        return a + b;
+      });
   };
 
   module.repos = repos;
