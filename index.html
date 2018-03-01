@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700|Roboto+Slab' rel='stylesheet' type='text/css'>
-    <link href="/styles/style.min.css" type="text/css" rel="stylesheet">
-    <script id="project-render" type="text/x-handlebars-template">
-      <article data-category='{{category}}' class='portfolio-items'>
-       <header>
-         <h3>{{title}}</h3>
-         <a href="/projects/{{projectUrl}}"><img src="{{featureImage}}" alt="{{title}} project"></a>
-         <div class="byline">
-            published <time pubdate datetime="2000-01-01">{{publishedOn}}</time>, {{publishStatus}}.
-         </div>
-       </header>
-       <section class="article-body"><p>{{{shortDescription}}}</p> <p><a href="/projects/{{projectUrl}}">Read more -></p></section>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700|Roboto+Slab' rel='stylesheet' type='text/css'>
+  <link href="/styles/style.min.css" type="text/css" rel="stylesheet">
+  <script id="project-render" type="text/x-handlebars-template">
+    <article data-category='{{category}}' class='portfolio-items'>
+      <header>
+        <h3>{{title}}</h3>
+        <a href="/projects/{{projectUrl}}"><img src="{{featureImage}}" alt="{{title}} project"></a>
+        <div class="byline">
+          published <time pubdate datetime="2000-01-01">{{publishedOn}}</time>, {{publishStatus}}.
+        </div>
+      </header>
+      <section class="article-body">
+        <p>{{{shortDescription}}}</p>
+        <p><a href="/projects/{{projectUrl}}">Read more -></p></section>
        <div class="linebreak"></div>
      </article>
     </script>
@@ -34,84 +37,85 @@
         <section class="detail-body">
           <p>{{{body}}}</p>
           {{#list links}}
-              <a href="{{url}}">{{title}}</a>
-          {{/list}}
-        </section>
-      </article>
-    </script>
-    <title>Peter Breen</title>
-  </head>
-  <body>
-    <header class="clearfix top-header">
-      <nav>
-        <ul class="nav-menu icon-list">
-          <li class="tab icon-home" data-content="home"><a href="/">Home</a></li>
-          <li class="tab icon-folder-open" data-content="projects"><a href="/projects">Projects</a></li>
-          <li class="tab icon-mail" data-content="contact"><a href="/contact">Contact</a></li>
-          <li class="tab icon-airplane" data-content="blog"><a href="/blog">Blog</a></li>
-        </ul>
-      </nav>
-      <h1>Peter Breen</h1>
-    </header>
-    <main>
-      <section id="home" class="tab-content hide-default">
-        <p>Hi, I’m Peter.</p>
-        <p>I do front-end development in Seattle, take photos (of airplanes, mostly), and hike mountains from time to time. I used to think I wanted to be an archivist. Now I think about making usable websites.</p>
-        <p>I believe in writing code to match: I want people to enjoy using websites I develop, which means taking advantage of best practices, writing clean code, and maybe having some fun while doing it.</p>
-        <p>Chances are, if an airplane flies overhead, I can either identify it or look it up. It’s not like I have a frequently-used app just to find out just what model, carrier, and flight it is or anything.</p>
-        <div id="github-stats"></div>
-        <div class="feature-img"></div>
+              <a href="{{url}}">{{title}}</a> {{/list}}
       </section>
-      <section id="projects" class="tab-content hide-default">
-        <h2>Projects</h2>
-          <select id="category-filter">
+    </article>
+  </script>
+  <title>Peter Breen</title>
+</head>
+
+<body>
+  <header class="clearfix top-header">
+    <nav>
+      <ul class="nav-menu icon-list">
+        <li class="tab icon-home" data-content="home"><a href="/">Home</a></li>
+        <li class="tab icon-folder-open" data-content="projects"><a href="/projects">Projects</a></li>
+        <li class="tab icon-mail" data-content="contact"><a href="/contact">Contact</a></li>
+        <li class="tab icon-airplane" data-content="blog"><a href="/blog">Blog</a></li>
+      </ul>
+    </nav>
+    <h1>Peter Breen</h1>
+  </header>
+  <main>
+    <section id="home" class="tab-content hide-default">
+      <p>Hi, I’m Peter.</p>
+      <p>I do front-end development in Seattle, take photos (of airplanes, mostly), and hike mountains from time to time. I used to think I wanted to be an archivist. Now I think about making usable websites.</p>
+      <p>I believe in writing code to match: I want people to enjoy using websites I develop, which means taking advantage of best practices, writing clean code, and maybe having some fun while doing it.</p>
+      <p>Chances are, if an airplane flies overhead, I can either identify it or look it up. It’s not like I have a frequently-used app just to find out just what model, carrier, and flight it is or anything.</p>
+      <div id="github-stats"></div>
+      <div class="feature-img"></div>
+    </section>
+    <section id="projects" class="tab-content hide-default">
+      <h2>Projects</h2>
+      <select id="category-filter">
             <option value="">- All Categories -</option>
           </select>
-          <div id="project-render"></div>
-       </section>
-       <section id="project-detail">
-         <div id="project-render-detail"></div>
-       </section>
-       <section id="contact" class="tab-content hide-default">
-         <h2>Contact</h2>
-          <p>I always feel that "contact me" pages are like icebreakers at social events, so for the record: Puffins are my favorite breakfast cereal. Feel free to contact me about work, my project, airplanes, or cereal.</p>
-          <p><a href="mailto:pbreen@gmail.com">pbreen@gmail.com<br />
+      <div id="project-render"></div>
+    </section>
+    <section id="project-detail">
+      <div id="project-render-detail"></div>
+    </section>
+    <section id="contact" class="tab-content hide-default">
+      <h2>Contact</h2>
+      <p>I always feel that "contact me" pages are like icebreakers at social events, so for the record: Puffins are my favorite breakfast cereal. Feel free to contact me about work, my project, airplanes, or cereal.</p>
+      <p><a href="mailto:pbreen@gmail.com">pbreen@gmail.com<br />
           <a href="mailto:peter@peterbreen.info">peter@peterbreen.info</a></p>
-            <ul class="social-list">
-              <li><a class="icon-github" href="https://github.com/PeterBreen"> Github</a></li>
-              <li><a class="icon-linkedin" href="https://www.linkedin.com/in/peter-breen-96404142"> LinkedIn</a></li>
-              <li><a class="icon-flickr3" href="https://www.flickr.com/photos/notpsion"> Flickr</a></li>
-              <li><a class="icon-wordpress" href="http://peterbreen.info/wp"> Wordpress</a></li>
-            </ul>
-          <div class="feature-img contact-feature-img"></div>
-       </section>
-       <section id="blog" class="tab-content hide-default">
-         <h2>Blog</h2>
-         <p>This is going to be a blog eventually. There's a <a href="https://github.com/PeterBreen/301-portfolio/issues/24">Github issue</a> for it and everything.</p>
-         <p><a href="http://peterbreen.info/wp">Here is my current Wordpress blog</a>.</p>
-       </section>
-      </main>
-      <footer>
-        <span>&copy; 2018 Peter Breen</span>
-        <ul class="social-list">
-          <li><a class="icon-github" href="https://github.com/PeterBreen"></a></li>
-          <li><a class="icon-linkedin" href="https://www.linkedin.com/in/peter-breen-96404142"></a></li>
-          <li><a class="icon-flickr3" href="https://www.flickr.com/photos/notpsion"></a></li>
-          <li><a class="icon-wordpress" href="http://peterbreen.info/wp"></a></li>
-        </ul>
-      </footer>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
-    <script src="/vendor/scripts/page.js"></script>
-    <script src="/scripts/models/portfolio.js"></script>
-    <script src="/scripts/models/repo.js"></script>
-    <script src="/scripts/views/portfolioView.js"></script>
-    <script src="/scripts/views/portfolioDetailView.js"></script>
-    <script src="/scripts/views/repoView.js"></script>
-    <script src="/scripts/controllers/blogController.js"></script>
-    <script src="/scripts/controllers/contactController.js"></script>
-    <script src="/scripts/controllers/homeController.js"></script>
-    <script src="/scripts/controllers/projectsController.js"></script>
-    <script src="/scripts/controllers/routes.js"></script>
-  </body>
+      <ul class="social-list">
+        <li><a class="icon-github" href="https://github.com/PeterBreen"> Github</a></li>
+        <li><a class="icon-linkedin" href="https://www.linkedin.com/in/peter-breen-96404142"> LinkedIn</a></li>
+        <li><a class="icon-flickr3" href="https://www.flickr.com/photos/notpsion"> Flickr</a></li>
+        <li><a class="icon-wordpress" href="http://peterbreen.info/wp"> Wordpress</a></li>
+      </ul>
+      <div class="feature-img contact-feature-img"></div>
+    </section>
+    <section id="blog" class="tab-content hide-default">
+      <h2>Blog</h2>
+      <p>This is going to be a blog eventually. There's a <a href="https://github.com/PeterBreen/301-portfolio/issues/24">Github issue</a> for it and everything.</p>
+      <p><a href="http://peterbreen.info/wp">Here is my current Wordpress blog</a>.</p>
+    </section>
+  </main>
+  <footer>
+    <span>&copy; 2018 Peter Breen</span>
+    <ul class="social-list">
+      <li><a class="icon-github" href="https://github.com/PeterBreen"></a></li>
+      <li><a class="icon-linkedin" href="https://www.linkedin.com/in/peter-breen-96404142"></a></li>
+      <li><a class="icon-flickr3" href="https://www.flickr.com/photos/notpsion"></a></li>
+      <li><a class="icon-wordpress" href="http://peterbreen.info/wp"></a></li>
+    </ul>
+  </footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+  <script src="/vendor/scripts/page.js"></script>
+  <script src="/scripts/models/portfolio.js"></script>
+  <script src="/scripts/models/repo.js"></script>
+  <script src="/scripts/views/portfolioView.js"></script>
+  <script src="/scripts/views/portfolioDetailView.js"></script>
+  <script src="/scripts/views/repoView.js"></script>
+  <script src="/scripts/controllers/blogController.js"></script>
+  <script src="/scripts/controllers/contactController.js"></script>
+  <script src="/scripts/controllers/homeController.js"></script>
+  <script src="/scripts/controllers/projectsController.js"></script>
+  <script src="/scripts/controllers/routes.js"></script>
+</body>
+
 </html>
